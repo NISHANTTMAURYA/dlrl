@@ -1,0 +1,17 @@
+# Ignore numpy binary arrays and other common unwanted files
+*.npy
+
+# Python cache and artifacts
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
