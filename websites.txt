@@ -99,3 +99,91 @@ https://pytorch.org/tutorials/beginner/basics/intro.html
 # Web Development Resources
 https://web.dev/learn/
 https://javascript.info/intro
+
+# ============================================================================
+# BATCH 3 - 50 More Diverse High-Quality Content Sources
+# ============================================================================
+
+# Recipe & Food Sites
+https://www.allrecipes.com/recipe/23600/worlds-best-lasagna/
+https://www.seriouseats.com/the-food-lab
+https://cooking.nytimes.com/recipes/1015819-chocolate-chip-cookies
+https://www.bonappetit.com/recipes
+
+# Healthcare & Medical
+https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444
+https://www.webmd.com/diet/health-benefits-green-tea
+https://www.healthline.com/nutrition/intermittent-fasting-guide
+https://www.nih.gov/health-information
+
+# Finance & Business
+https://www.investopedia.com/terms/b/blockchain.asp
+https://www.bloomberg.com/markets
+https://www.wsj.com/news/technology
+https://www.forbes.com/artificial-intelligence/
+
+# Government & Legal
+https://www.usa.gov/how-to-vote
+https://www.whitehouse.gov/
+https://www.supremecourt.gov/
+https://data.gov/
+
+# Academic & Research Platforms
+https://scholar.google.com/
+https://www.researchgate.net/
+https://pubmed.ncbi.nlm.nih.gov/
+https://academic.oup.com/
+
+# E-learning Platforms
+https://www.codecademy.com/learn/learn-python-3
+https://www.w3schools.com/python/
+https://leetcode.com/problemset/
+https://www.hackerrank.com/domains/python
+
+# Travel & Lifestyle
+https://www.lonelyplanet.com/japan
+https://www.tripadvisor.com/
+https://www.nationalgeographic.com/travel/
+https://www.cntraveler.com/
+
+# E-commerce & Product Reviews
+https://www.consumerreports.org/electronics/
+https://www.wirecutter.com/
+https://www.pcmag.com/reviews
+https://www.cnet.com/reviews/
+
+# Entertainment & Gaming
+https://www.ign.com/reviews
+https://www.imdb.com/chart/top/
+https://www.rottentomatoes.com/
+https://www.metacritic.com/game
+
+# Sports & Fitness
+https://www.espn.com/nba/
+https://www.si.com/
+https://www.bodybuilding.com/fun/beginner.htm
+https://www.runnersworld.com/
+
+# Environmental & Science
+https://www.sciencedaily.com/
+https://climate.nasa.gov/
+https://www.nationalgeographic.com/environment/
+https://e360.yale.edu/
+
+# Technology Reviews & Comparisons
+https://www.tomsguide.com/
+https://www.techradar.com/
+https://www.androidauthority.com/
+https://9to5mac.com/
+
+# Design & Creative
+https://www.smashingmagazine.com/
+https://dribbble.com/shots/popular
+https://www.behance.net/
+https://www.creativebloq.com/
+
+# Law & Policy
+https://www.law.cornell.edu/constitution
+https://www.aclu.org/
+https://www.eff.org/
+https://www.copyright.gov/

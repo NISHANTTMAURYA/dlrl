@@ -420,28 +420,28 @@ Hide
   1. #### [How Google’s DeepMind tool is ‘more quickly’ forecasting hurricane behavior](/technology/2025/nov/16/google-deepmind-hurricane-forecast)
   2. #### [AI slop tops Billboard and Spotify charts as synthetic music spreads](/technology/2025/nov/13/ai-music-spotify-billboard-charts)
   3. #### [AI firm claims it stopped Chinese state-sponsored cyber-attack campaign](/technology/2025/nov/14/ai-anthropic-chinese-state-sponsored-cyber-attack)
-  4. #### [Facebook’s failure: did fake news and polarized politics get Trump elected?](/technology/2016/nov/10/facebook-fake-news-election-conspiracy-theories)
-  5. #### [Risks to children playing Roblox ‘deeply disturbing’, say researchers](/technology/2025/apr/14/risks-children-roblox-deeply-disturbing-researchers)
+  4. #### [Risks to children playing Roblox ‘deeply disturbing’, say researchers](/technology/2025/apr/14/risks-children-roblox-deeply-disturbing-researchers)
+  5. #### [Facebook’s failure: did fake news and polarized politics get Trump elected?](/technology/2016/nov/10/facebook-fake-news-election-conspiracy-theories)
   6. #### [Matthew McConaughey and Michael Caine sign voice deal with AI company](/culture/2025/nov/11/matthew-mcconaughey-michael-caine-ai-voice)
   7. #### [Are we living in a golden age of stupidity?](/technology/2025/oct/18/are-we-living-in-a-golden-age-of-stupidity-technology)
-  8. #### [ChatGPT violated copyright law by ‘learning’ from song lyrics, German court rules](/technology/2025/nov/11/chatgpt-violated-copyright-laws-german-court-rules)
-  9. #### [Amazon reveals cause of AWS outage that took everything from banks to smart beds offline](/technology/2025/oct/24/amazon-reveals-cause-of-aws-outage)
-  10. #### [OpenAI whistleblower who died was being considered as witness against company](/technology/2024/dec/21/openai-whistleblower-dead-aged-26)
+  8. #### [Amazon reveals cause of AWS outage that took everything from banks to smart beds offline](/technology/2025/oct/24/amazon-reveals-cause-of-aws-outage)
+  9. #### [ChatGPT violated copyright law by ‘learning’ from song lyrics, German court rules](/technology/2025/nov/11/chatgpt-violated-copyright-laws-german-court-rules)
+  10. #### [US and China reach ‘final deal’ on TikTok sale, treasury secretary says](/technology/2025/oct/26/us-china-tiktok-deal-scott-bessent)
 
 
 
 ### Most viewed Across the guardian
 
   1. #### [Trump news at a glance: Another Republican challenges Trump over Epstein files ](https://www.theguardian.com/us-news/2025/nov/17/trump-administration-news-updates-today)
-  2. #### [Trump’s investigation into Epstein ties to political foes might be ‘smokescreen’, Republican says](https://www.theguardian.com/us-news/2025/nov/16/trump-epstein-files-republican)
-  3. #### [Trump tells Republicans to vote to release Epstein files, saying ‘we have nothing to hide’](https://www.theguardian.com/us-news/2025/nov/17/trump-tells-republicans-to-vote-to-release-epstein-files-saying-we-have-nothing-to-hide)
-  4. #### [A puppy and unlimited toilet paper? Legal experts say Ghislaine Maxwell’s alleged prison life is uncommon](https://www.theguardian.com/us-news/2025/nov/16/ghislaine-maxwell-low-security-prison-treatment)
-  5. #### [The banality of evil: how Epstein’s powerful friends normalised him](https://www.theguardian.com/us-news/2025/nov/16/jeffrey-epstein-powerful-friends)
-  6. #### [China travel warning for Japan sends shares in tourism and retail companies plunging](https://www.theguardian.com/world/2025/nov/17/china-travel-warning-for-japan-sends-shares-in-tourism-and-retail-companies-plunging)
+  2. #### [Trump tells Republicans to vote to release Epstein files, in a reversal of his previous stance](https://www.theguardian.com/us-news/2025/nov/17/trump-tells-republicans-to-vote-to-release-epstein-files-saying-we-have-nothing-to-hide)
+  3. #### [Trump’s investigation into Epstein ties to political foes might be ‘smokescreen’, Republican says](https://www.theguardian.com/us-news/2025/nov/16/trump-epstein-files-republican)
+  4. #### [China travel warning for Japan sends shares in tourism and retail companies plunging](https://www.theguardian.com/world/2025/nov/17/china-travel-warning-for-japan-sends-shares-in-tourism-and-retail-companies-plunging)
+  5. #### [A puppy and unlimited toilet paper? Legal experts say Ghislaine Maxwell’s alleged prison life is uncommon](https://www.theguardian.com/us-news/2025/nov/16/ghislaine-maxwell-low-security-prison-treatment)
+  6. #### [The banality of evil: how Epstein’s powerful friends normalised him](https://www.theguardian.com/us-news/2025/nov/16/jeffrey-epstein-powerful-friends)
   7. #### [World Cup qualifying roundup: Haaland shatters Italy to seal Norway return to finals](https://www.theguardian.com/football/2025/nov/16/world-cup-roundup-portugal-armenia-italy-norway)
   8. #### [‘He has to accept the decision’: Tuchel criticises Bellingham’s petulance in England win](https://www.theguardian.com/football/2025/nov/16/thomas-tuchel-jude-bellingham-england-abania-world-cup-qualifier)
-  9. #### [The US has drafted a coin featuring Trump. Here’s a better way to immortalize him](https://www.theguardian.com/commentisfree/2025/nov/16/us-coin-trump)
-  10. #### [Everything I wish I’d known before I decided to freeze my eggs at 36](https://www.theguardian.com/lifeandstyle/2025/nov/16/everything-i-wish-i-had-known-before-i-decided-to-freeze-my-eggs)
+  9. #### [Everything I wish I’d known before I decided to freeze my eggs at 36](https://www.theguardian.com/lifeandstyle/2025/nov/16/everything-i-wish-i-had-known-before-i-decided-to-freeze-my-eggs)
+  10. #### [The US has drafted a coin featuring Trump. Here’s a better way to immortalize him](https://www.theguardian.com/commentisfree/2025/nov/16/us-coin-trump)
 
 
 
@@ -450,8 +450,8 @@ Explore more on these topics
   * [Artificial intelligence (AI)](https://www.theguardian.com/technology/artificialintelligenceai)
   * [Games](https://www.theguardian.com/games/games)
   * [Computing](https://www.theguardian.com/technology/computing)
+  * [Internet](https://www.theguardian.com/technology/internet)
   * [Smartphones](https://www.theguardian.com/technology/smartphones)
-  * [Apple](https://www.theguardian.com/technology/apple)
 
 
 

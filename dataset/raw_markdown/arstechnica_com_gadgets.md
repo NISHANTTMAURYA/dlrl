@@ -138,9 +138,9 @@ Most Read
 
   3. 3. [Three astronauts are stuck on China’s space station without a safe ride home](https://arstechnica.com/science/2025/11/three-astronauts-are-stuck-on-chinas-space-station-without-a-safe-ride-home/)
 
-  4. 4. [US may owe $1 trillion in refunds if SCOTUS cancels Trump tariffs](https://arstechnica.com/tech-policy/2025/11/tariff-refunds-may-get-messy-if-trump-loses-supreme-court-fight/)
+  4. 4. [The evolution of rationality: How chimps process conflicting evidence](https://arstechnica.com/science/2025/11/the-evolution-of-rationality-how-chimps-process-conflicting-evidence/)
 
-  5. 5. [The evolution of rationality: How chimps process conflicting evidence](https://arstechnica.com/science/2025/11/the-evolution-of-rationality-how-chimps-process-conflicting-evidence/)
+  5. 5. [US may owe $1 trillion in refunds if SCOTUS cancels Trump tariffs](https://arstechnica.com/tech-policy/2025/11/tariff-refunds-may-get-messy-if-trump-loses-supreme-court-fight/)
 
 
 
