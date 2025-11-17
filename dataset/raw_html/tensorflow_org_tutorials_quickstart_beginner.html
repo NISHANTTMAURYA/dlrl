@@ -1,0 +1,4985 @@
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html 
+      lang="en"
+      dir="ltr">
+  <head>
+    <meta name="google-signin-client-id" content="157101835696-ooapojlodmuabs2do2vuhhnf90bccmoi.apps.googleusercontent.com"><meta name="google-signin-scope"
+          content="profile email https://www.googleapis.com/auth/developerprofiles https://www.googleapis.com/auth/developerprofiles.award"><meta property="og:site_name" content="TensorFlow">
+    <meta property="og:type" content="website"><meta name="theme-color" content="#ff6f00"><meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <link rel="manifest" href="/_pwa/tensorflow/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="//apis.google.com" crossorigin>
+    <link rel="preconnect" href="//www.google-analytics.com" crossorigin><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap">
+      <link rel="stylesheet"
+            href="//fonts.googleapis.com/css2?family=Material+Icons&family=Material+Symbols+Outlined&display=block"><link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v893b810958a0a119aa54e87c6f4f7fb5af7eacc01ad7a1f488382f3791697b7d/tensorflow/css/app.css">
+      <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v893b810958a0a119aa54e87c6f4f7fb5af7eacc01ad7a1f488382f3791697b7d/tensorflow/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v893b810958a0a119aa54e87c6f4f7fb5af7eacc01ad7a1f488382f3791697b7d/tensorflow/images/apple-touch-icon-180x180.png"><link rel="canonical" href="https://www.tensorflow.org/tutorials/quickstart/beginner"><link rel="search" type="application/opensearchdescription+xml"
+            title="TensorFlow" href="https://www.tensorflow.org/s/opensearch.xml">
+      <link rel="alternate" hreflang="en"
+          href="https://www.tensorflow.org/tutorials/quickstart/beginner" /><link rel="alternate" hreflang="x-default" href="https://www.tensorflow.org/tutorials/quickstart/beginner" /><link rel="alternate" hreflang="ar"
+          href="https://www.tensorflow.org/tutorials/quickstart/beginner?hl=ar" /><link rel="alternate" hreflang="bn"
+          href="https://www.tensorflow.org/tutorials/quickstart/beginner?hl=bn" /><link rel="alternate" hreflang="zh-Hans"
+          href="https://www.tensorflow.org/tutorials/quickstart/beginner?hl=zh-cn" /><link rel="alternate" hreflang="fa"
+          href="https://www.tensorflow.org/tutorials/quickstart/beginner?hl=fa" /><link rel="alternate" hreflang="fr"
+          href="https://www.tensorflow.org/tutorials/quickstart/beginner?hl=fr" /><link rel="alternate" hreflang="he"
+          href="https://www.tensorflow.org/tutorials/quickstart/beginner?hl=he" /><link rel="alternate" hreflang="hi"
+          href="https://www.tensorflow.org/tutorials/quickstart/beginner?hl=hi" /><link rel="alternate" hreflang="id"
+          href="https://www.tensorflow.org/tutorials/quickstart/beginner?hl=id" /><link rel="alternate" hreflang="it"
+          href="https://www.tensorflow.org/tutorials/quickstart/beginner?hl=it" /><link rel="alternate" hreflang="ja"
+          href="https://www.tensorflow.org/tutorials/quickstart/beginner?hl=ja" /><link rel="alternate" hreflang="ko"
+          href="https://www.tensorflow.org/tutorials/quickstart/beginner?hl=ko" /><link rel="alternate" hreflang="pl"
+          href="https://www.tensorflow.org/tutorials/quickstart/beginner?hl=pl" /><link rel="alternate" hreflang="pt-BR"
+          href="https://www.tensorflow.org/tutorials/quickstart/beginner?hl=pt-br" /><link rel="alternate" hreflang="ru"
+          href="https://www.tensorflow.org/tutorials/quickstart/beginner?hl=ru" /><link rel="alternate" hreflang="es-419"
+          href="https://www.tensorflow.org/tutorials/quickstart/beginner?hl=es-419" /><link rel="alternate" hreflang="th"
+          href="https://www.tensorflow.org/tutorials/quickstart/beginner?hl=th" /><link rel="alternate" hreflang="tr"
+          href="https://www.tensorflow.org/tutorials/quickstart/beginner?hl=tr" /><link rel="alternate" hreflang="vi"
+          href="https://www.tensorflow.org/tutorials/quickstart/beginner?hl=vi" /><title>TensorFlow 2 quickstart for beginners &nbsp;|&nbsp; TensorFlow Core</title>
+
+<meta property="og:title" content="TensorFlow 2 quickstart for beginners &nbsp;|&nbsp; TensorFlow Core"><meta property="og:url" content="https://www.tensorflow.org/tutorials/quickstart/beginner"><meta property="og:image" content="https://www.tensorflow.org/static/images/tf_logo_social.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675"><meta property="og:locale" content="en"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    
+    "headline": "TensorFlow 2 quickstart for beginners"
+  }
+</script><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "TensorFlow Core",
+      "item": "https://www.tensorflow.org/tutorials"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "TensorFlow 2 quickstart for beginners",
+      "item": "https://www.tensorflow.org/tutorials/quickstart/beginner"
+    }]
+  }
+  </script>
+  
+
+  
+
+  
+
+
+    
+      <link rel="stylesheet" href="/extras.css"></head>
+  <body class=""
+        template="page"
+        theme="tensorflow-theme"
+        type="article"
+        
+        
+        
+        layout="docs"
+        
+        
+        
+        
+        
+        display-toc
+        pending>
+  
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+  
+  
+    <a href="#main-content" class="skip-link button">
+      
+      Skip to main content
+    </a>
+    <section class="devsite-wrapper">
+      <devsite-cookie-notification-bar></devsite-cookie-notification-bar><devsite-header role="banner">
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="devsite-header--inner" data-nosnippet>
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Open menu">
+        </button>
+        
+<div class="devsite-product-name-wrapper">
+
+  <a href="/" class="devsite-site-logo-link gc-analytics-event"
+   data-category="Site-Wide Custom Events" data-label="Site logo" track-type="globalNav"
+   track-name="tensorFlow" track-metadata-position="nav"
+   track-metadata-eventDetail="nav">
+  
+  <picture>
+    
+    <img src="https://www.gstatic.com/devrel-devsite/prod/v893b810958a0a119aa54e87c6f4f7fb5af7eacc01ad7a1f488382f3791697b7d/tensorflow/images/lockup.svg" class="devsite-site-logo" alt="TensorFlow">
+  </picture>
+  
+</a>
+
+
+
+  
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list"
+  >
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+      
+    
+  </li>
+  
+</ul>
+  </span>
+
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+            
+              
+              
+  <devsite-tabs class="upper-tabs">
+
+    <nav class="devsite-tabs-wrapper" aria-label="Upper tabs">
+      
+        
+          <tab  >
+            
+    <a href="https://www.tensorflow.org/install"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://www.tensorflow.org/install"
+    
+       track-type="nav"
+       track-metadata-position="nav - install"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Install"
+         
+           track-name="install"
+         
+       >
+    Install
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+        
+          <tab class="devsite-dropdown
+    
+    devsite-active
+    
+    ">
+  
+    <a href="https://www.tensorflow.org/learn"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://www.tensorflow.org/learn"
+    
+       track-type="nav"
+       track-metadata-position="nav - learn"
+       track-metadata-module="primary nav"
+       aria-label="Learn, selected" 
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Learn"
+         
+           track-name="learn"
+         
+       >
+    Learn
+  
+    </a>
+    
+      <button
+         aria-haspopup="menu"
+         aria-expanded="false"
+         aria-label="Dropdown menu for Learn"
+         track-type="nav"
+         track-metadata-eventdetail="https://www.tensorflow.org/learn"
+         track-metadata-position="nav - learn"
+         track-metadata-module="primary nav"
+         
+          
+            data-category="Site-Wide Custom Events"
+          
+            data-label="Tab: Learn"
+          
+            track-name="learn"
+          
+        
+         class="devsite-tabs-dropdown-toggle devsite-icon devsite-icon-arrow-drop-down"></button>
+    
+  
+  <div class="devsite-tabs-dropdown" role="menu" aria-label="submenu" hidden>
+    
+    <div class="devsite-tabs-dropdown-content">
+      
+        <div class="devsite-tabs-dropdown-column
+                    tfo-menu-column-learn">
+          
+            <ul class="devsite-tabs-dropdown-section
+                       ">
+              
+              
+              
+                <li class="devsite-nav-item">
+                  <a href="https://www.tensorflow.org/learn"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://www.tensorflow.org/learn"
+                     track-metadata-position="nav - learn"
+                     track-metadata-module="tertiary nav"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Introduction
+                    </div>
+                    
+                    <div class="devsite-nav-item-description">
+                      New to TensorFlow?
+                    </div>
+                    
+                  </a>
+                </li>
+              
+                <li class="devsite-nav-item">
+                  <a href="https://www.tensorflow.org/tutorials"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://www.tensorflow.org/tutorials"
+                     track-metadata-position="nav - learn"
+                     track-metadata-module="tertiary nav"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Tutorials
+                    </div>
+                    
+                    <div class="devsite-nav-item-description">
+                      Learn how to use TensorFlow with end-to-end examples
+                    </div>
+                    
+                  </a>
+                </li>
+              
+                <li class="devsite-nav-item">
+                  <a href="https://www.tensorflow.org/guide"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://www.tensorflow.org/guide"
+                     track-metadata-position="nav - learn"
+                     track-metadata-module="tertiary nav"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Guide
+                    </div>
+                    
+                    <div class="devsite-nav-item-description">
+                      Learn framework concepts and components
+                    </div>
+                    
+                  </a>
+                </li>
+              
+                <li class="devsite-nav-item">
+                  <a href="https://www.tensorflow.org/resources/learn-ml"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://www.tensorflow.org/resources/learn-ml"
+                     track-metadata-position="nav - learn"
+                     track-metadata-module="tertiary nav"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Learn ML
+                    </div>
+                    
+                    <div class="devsite-nav-item-description">
+                      Educational resources to master your path with TensorFlow
+                    </div>
+                    
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </div>
+      
+    </div>
+  </div>
+</tab>
+        
+      
+        
+          <tab class="devsite-dropdown
+    
+    
+    
+    ">
+  
+    <a href="https://www.tensorflow.org/api"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://www.tensorflow.org/api"
+    
+       track-type="nav"
+       track-metadata-position="nav - api"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: API"
+         
+           track-name="api"
+         
+       >
+    API
+  
+    </a>
+    
+      <button
+         aria-haspopup="menu"
+         aria-expanded="false"
+         aria-label="Dropdown menu for API"
+         track-type="nav"
+         track-metadata-eventdetail="https://www.tensorflow.org/api"
+         track-metadata-position="nav - api"
+         track-metadata-module="primary nav"
+         
+          
+            data-category="Site-Wide Custom Events"
+          
+            data-label="Tab: API"
+          
+            track-name="api"
+          
+        
+         class="devsite-tabs-dropdown-toggle devsite-icon devsite-icon-arrow-drop-down"></button>
+    
+  
+  <div class="devsite-tabs-dropdown" role="menu" aria-label="submenu" hidden>
+    
+    <div class="devsite-tabs-dropdown-content">
+      
+        <div class="devsite-tabs-dropdown-column
+                    ">
+          
+            <ul class="devsite-tabs-dropdown-section
+                       ">
+              
+              
+              
+                <li class="devsite-nav-item">
+                  <a href="https://www.tensorflow.org/api/stable"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://www.tensorflow.org/api/stable"
+                     track-metadata-position="nav - api"
+                     track-metadata-module="tertiary nav"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      TensorFlow (v2.16.1)
+                    </div>
+                    
+                  </a>
+                </li>
+              
+                <li class="devsite-nav-item">
+                  <a href="https://www.tensorflow.org/versions"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://www.tensorflow.org/versions"
+                     track-metadata-position="nav - api"
+                     track-metadata-module="tertiary nav"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Versions…
+                    </div>
+                    
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </div>
+      
+        <div class="devsite-tabs-dropdown-column
+                    ">
+          
+            <ul class="devsite-tabs-dropdown-section
+                       ">
+              
+              
+              
+                <li class="devsite-nav-item">
+                  <a href="https://js.tensorflow.org/api/latest/"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://js.tensorflow.org/api/latest/"
+                     track-metadata-position="nav - api"
+                     track-metadata-module="tertiary nav"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      TensorFlow.js
+                    </div>
+                    
+                  </a>
+                </li>
+              
+                <li class="devsite-nav-item">
+                  <a href="https://www.tensorflow.org/lite/api_docs"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://www.tensorflow.org/lite/api_docs"
+                     track-metadata-position="nav - api"
+                     track-metadata-module="tertiary nav"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      TensorFlow Lite
+                    </div>
+                    
+                  </a>
+                </li>
+              
+                <li class="devsite-nav-item">
+                  <a href="https://www.tensorflow.org/tfx/api_docs"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://www.tensorflow.org/tfx/api_docs"
+                     track-metadata-position="nav - api"
+                     track-metadata-module="tertiary nav"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      TFX
+                    </div>
+                    
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </div>
+      
+    </div>
+  </div>
+</tab>
+        
+      
+        
+          <tab class="devsite-dropdown
+    
+    
+    
+    ">
+  
+    <a href="https://www.tensorflow.org/resources/models-datasets"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://www.tensorflow.org/resources/models-datasets"
+    
+       track-type="nav"
+       track-metadata-position="nav - ecosystem"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Ecosystem"
+         
+           track-name="ecosystem"
+         
+       >
+    Ecosystem
+  
+    </a>
+    
+      <button
+         aria-haspopup="menu"
+         aria-expanded="false"
+         aria-label="Dropdown menu for Ecosystem"
+         track-type="nav"
+         track-metadata-eventdetail="https://www.tensorflow.org/resources/models-datasets"
+         track-metadata-position="nav - ecosystem"
+         track-metadata-module="primary nav"
+         
+          
+            data-category="Site-Wide Custom Events"
+          
+            data-label="Tab: Ecosystem"
+          
+            track-name="ecosystem"
+          
+        
+         class="devsite-tabs-dropdown-toggle devsite-icon devsite-icon-arrow-drop-down"></button>
+    
+  
+  <div class="devsite-tabs-dropdown" role="menu" aria-label="submenu" hidden>
+    
+    <div class="devsite-tabs-dropdown-content">
+      
+        <div class="devsite-tabs-dropdown-column
+                    ">
+          
+            <ul class="devsite-tabs-dropdown-section
+                       ">
+              
+                <li class="devsite-nav-title" role="heading" tooltip>LIBRARIES</li>
+              
+              
+              
+                <li class="devsite-nav-item">
+                  <a href="https://www.tensorflow.org/js"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://www.tensorflow.org/js"
+                     track-metadata-position="nav - ecosystem"
+                     track-metadata-module="tertiary nav"
+                     
+                       track-metadata-module_headline="libraries"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      TensorFlow.js
+                    </div>
+                    
+                    <div class="devsite-nav-item-description">
+                      Develop web ML applications in JavaScript
+                    </div>
+                    
+                  </a>
+                </li>
+              
+                <li class="devsite-nav-item">
+                  <a href="https://www.tensorflow.org/lite"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://www.tensorflow.org/lite"
+                     track-metadata-position="nav - ecosystem"
+                     track-metadata-module="tertiary nav"
+                     
+                       track-metadata-module_headline="libraries"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      TensorFlow Lite
+                    </div>
+                    
+                    <div class="devsite-nav-item-description">
+                      Deploy ML on mobile, microcontrollers and other edge devices
+                    </div>
+                    
+                  </a>
+                </li>
+              
+                <li class="devsite-nav-item">
+                  <a href="https://www.tensorflow.org/tfx"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://www.tensorflow.org/tfx"
+                     track-metadata-position="nav - ecosystem"
+                     track-metadata-module="tertiary nav"
+                     
+                       track-metadata-module_headline="libraries"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      TFX
+                    </div>
+                    
+                    <div class="devsite-nav-item-description">
+                      Build production ML pipelines
+                    </div>
+                    
+                  </a>
+                </li>
+              
+                <li class="devsite-nav-item">
+                  <a href="https://www.tensorflow.org/resources/libraries-extensions"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://www.tensorflow.org/resources/libraries-extensions"
+                     track-metadata-position="nav - ecosystem"
+                     track-metadata-module="tertiary nav"
+                     
+                       track-metadata-module_headline="libraries"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      All libraries
+                    </div>
+                    
+                    <div class="devsite-nav-item-description">
+                      Create advanced models and extend TensorFlow
+                    </div>
+                    
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </div>
+      
+        <div class="devsite-tabs-dropdown-column
+                    ">
+          
+            <ul class="devsite-tabs-dropdown-section
+                       ">
+              
+                <li class="devsite-nav-title" role="heading" tooltip>RESOURCES</li>
+              
+              
+              
+                <li class="devsite-nav-item">
+                  <a href="https://www.tensorflow.org/resources/models-datasets"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://www.tensorflow.org/resources/models-datasets"
+                     track-metadata-position="nav - ecosystem"
+                     track-metadata-module="tertiary nav"
+                     
+                       track-metadata-module_headline="resources"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Models & datasets
+                    </div>
+                    
+                    <div class="devsite-nav-item-description">
+                      Pre-trained models and datasets built by Google and the community
+                    </div>
+                    
+                  </a>
+                </li>
+              
+                <li class="devsite-nav-item">
+                  <a href="https://www.tensorflow.org/resources/tools"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://www.tensorflow.org/resources/tools"
+                     track-metadata-position="nav - ecosystem"
+                     track-metadata-module="tertiary nav"
+                     
+                       track-metadata-module_headline="resources"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Tools
+                    </div>
+                    
+                    <div class="devsite-nav-item-description">
+                      Tools to support and accelerate TensorFlow workflows
+                    </div>
+                    
+                  </a>
+                </li>
+              
+                <li class="devsite-nav-item">
+                  <a href="https://www.tensorflow.org/responsible_ai"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://www.tensorflow.org/responsible_ai"
+                     track-metadata-position="nav - ecosystem"
+                     track-metadata-module="tertiary nav"
+                     
+                       track-metadata-module_headline="resources"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Responsible AI
+                    </div>
+                    
+                    <div class="devsite-nav-item-description">
+                      Resources for every stage of the ML workflow
+                    </div>
+                    
+                  </a>
+                </li>
+              
+                <li class="devsite-nav-item">
+                  <a href="https://www.tensorflow.org/resources/recommendation-systems"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://www.tensorflow.org/resources/recommendation-systems"
+                     track-metadata-position="nav - ecosystem"
+                     track-metadata-module="tertiary nav"
+                     
+                       track-metadata-module_headline="resources"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Recommendation systems
+                    </div>
+                    
+                    <div class="devsite-nav-item-description">
+                      Build recommendation systems with open source tools
+                    </div>
+                    
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </div>
+      
+    </div>
+  </div>
+</tab>
+        
+      
+        
+          <tab class="devsite-dropdown
+    
+    
+    
+    ">
+  
+    <a href="https://www.tensorflow.org/community"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://www.tensorflow.org/community"
+    
+       track-type="nav"
+       track-metadata-position="nav - community"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Community"
+         
+           track-name="community"
+         
+       >
+    Community
+  
+    </a>
+    
+      <button
+         aria-haspopup="menu"
+         aria-expanded="false"
+         aria-label="Dropdown menu for Community"
+         track-type="nav"
+         track-metadata-eventdetail="https://www.tensorflow.org/community"
+         track-metadata-position="nav - community"
+         track-metadata-module="primary nav"
+         
+          
+            data-category="Site-Wide Custom Events"
+          
+            data-label="Tab: Community"
+          
+            track-name="community"
+          
+        
+         class="devsite-tabs-dropdown-toggle devsite-icon devsite-icon-arrow-drop-down"></button>
+    
+  
+  <div class="devsite-tabs-dropdown" role="menu" aria-label="submenu" hidden>
+    
+    <div class="devsite-tabs-dropdown-content">
+      
+        <div class="devsite-tabs-dropdown-column
+                    ">
+          
+            <ul class="devsite-tabs-dropdown-section
+                       ">
+              
+              
+              
+                <li class="devsite-nav-item">
+                  <a href="https://www.tensorflow.org/community/groups"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://www.tensorflow.org/community/groups"
+                     track-metadata-position="nav - community"
+                     track-metadata-module="tertiary nav"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Groups
+                    </div>
+                    
+                    <div class="devsite-nav-item-description">
+                      User groups, interest groups and mailing lists
+                    </div>
+                    
+                  </a>
+                </li>
+              
+                <li class="devsite-nav-item">
+                  <a href="https://www.tensorflow.org/community/contribute"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://www.tensorflow.org/community/contribute"
+                     track-metadata-position="nav - community"
+                     track-metadata-module="tertiary nav"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Contribute
+                    </div>
+                    
+                    <div class="devsite-nav-item-description">
+                      Guide for contributing to code and documentation
+                    </div>
+                    
+                  </a>
+                </li>
+              
+                <li class="devsite-nav-item">
+                  <a href="https://blog.tensorflow.org/"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://blog.tensorflow.org/"
+                     track-metadata-position="nav - community"
+                     track-metadata-module="tertiary nav"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Blog
+                    </div>
+                    
+                    <div class="devsite-nav-item-description">
+                      Stay up to date with all things TensorFlow
+                    </div>
+                    
+                  </a>
+                </li>
+              
+                <li class="devsite-nav-item">
+                  <a href="https://discuss.tensorflow.org"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://discuss.tensorflow.org"
+                     track-metadata-position="nav - community"
+                     track-metadata-module="tertiary nav"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Forum
+                    </div>
+                    
+                    <div class="devsite-nav-item-description">
+                      Discussion platform for the TensorFlow community
+                    </div>
+                    
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </div>
+      
+    </div>
+  </div>
+</tab>
+        
+      
+        
+          <tab class="devsite-dropdown
+    
+    
+    
+    ">
+  
+    <a href="https://www.tensorflow.org/about"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://www.tensorflow.org/about"
+    
+       track-type="nav"
+       track-metadata-position="nav - why tensorflow"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Why TensorFlow"
+         
+           track-name="why tensorflow"
+         
+       >
+    Why TensorFlow
+  
+    </a>
+    
+      <button
+         aria-haspopup="menu"
+         aria-expanded="false"
+         aria-label="Dropdown menu for Why TensorFlow"
+         track-type="nav"
+         track-metadata-eventdetail="https://www.tensorflow.org/about"
+         track-metadata-position="nav - why tensorflow"
+         track-metadata-module="primary nav"
+         
+          
+            data-category="Site-Wide Custom Events"
+          
+            data-label="Tab: Why TensorFlow"
+          
+            track-name="why tensorflow"
+          
+        
+         class="devsite-tabs-dropdown-toggle devsite-icon devsite-icon-arrow-drop-down"></button>
+    
+  
+  <div class="devsite-tabs-dropdown" role="menu" aria-label="submenu" hidden>
+    
+    <div class="devsite-tabs-dropdown-content">
+      
+        <div class="devsite-tabs-dropdown-column
+                    ">
+          
+            <ul class="devsite-tabs-dropdown-section
+                       ">
+              
+              
+              
+                <li class="devsite-nav-item">
+                  <a href="https://www.tensorflow.org/about"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://www.tensorflow.org/about"
+                     track-metadata-position="nav - why tensorflow"
+                     track-metadata-module="tertiary nav"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      About
+                    </div>
+                    
+                  </a>
+                </li>
+              
+                <li class="devsite-nav-item">
+                  <a href="https://www.tensorflow.org/about/case-studies"
+                    
+                     track-type="nav"
+                     track-metadata-eventdetail="https://www.tensorflow.org/about/case-studies"
+                     track-metadata-position="nav - why tensorflow"
+                     track-metadata-module="tertiary nav"
+                     
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Case studies
+                    </div>
+                    
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </div>
+      
+    </div>
+  </div>
+</tab>
+        
+      
+    </nav>
+
+  </devsite-tabs>
+
+            
+           </div>
+          
+<devsite-search
+    enable-signin
+    enable-search
+    enable-suggestions
+      enable-query-completion
+    
+    enable-search-summaries
+    project-name="TensorFlow Core"
+    tenant-name="TensorFlow"
+    
+    
+    
+    
+    
+    >
+  <form class="devsite-search-form" action="https://www.tensorflow.org/s/results" method="GET">
+    <div class="devsite-search-container">
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              
+              aria-label="Open search"></button>
+      <div class="devsite-searchbox">
+        <input
+          aria-activedescendant=""
+          aria-autocomplete="list"
+          
+          aria-label="Search"
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          autocomplete="off"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          
+          placeholder="Search"
+          role="combobox"
+          type="text"
+          value=""
+          >
+          <div class="devsite-search-image material-icons" aria-hidden="true">
+            
+              <svg class="devsite-search-ai-image" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_6641_386)">
+                    <path d="M19.6 21L13.3 14.7C12.8 15.1 12.225 15.4167 11.575 15.65C10.925 15.8833 10.2333 16 9.5 16C7.68333 16 6.14167 15.375 4.875 14.125C3.625 12.8583 3 11.3167 3 9.5C3 7.68333 3.625 6.15 4.875 4.9C6.14167 3.63333 7.68333 3 9.5 3C10.0167 3 10.5167 3.05833 11 3.175C11.4833 3.275 11.9417 3.43333 12.375 3.65L10.825 5.2C10.6083 5.13333 10.3917 5.08333 10.175 5.05C9.95833 5.01667 9.73333 5 9.5 5C8.25 5 7.18333 5.44167 6.3 6.325C5.43333 7.19167 5 8.25 5 9.5C5 10.75 5.43333 11.8167 6.3 12.7C7.18333 13.5667 8.25 14 9.5 14C10.6667 14 11.6667 13.625 12.5 12.875C13.35 12.1083 13.8417 11.15 13.975 10H15.975C15.925 10.6333 15.7833 11.2333 15.55 11.8C15.3333 12.3667 15.05 12.8667 14.7 13.3L21 19.6L19.6 21ZM17.5 12C17.5 10.4667 16.9667 9.16667 15.9 8.1C14.8333 7.03333 13.5333 6.5 12 6.5C13.5333 6.5 14.8333 5.96667 15.9 4.9C16.9667 3.83333 17.5 2.53333 17.5 0.999999C17.5 2.53333 18.0333 3.83333 19.1 4.9C20.1667 5.96667 21.4667 6.5 23 6.5C21.4667 6.5 20.1667 7.03333 19.1 8.1C18.0333 9.16667 17.5 10.4667 17.5 12Z" fill="#5F6368"/>
+                  </g>
+                <defs>
+                <clipPath id="clip0_6641_386">
+                <rect width="24" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            
+          </div>
+          <div class="devsite-search-shortcut-icon-container" aria-hidden="true">
+            <kbd class="devsite-search-shortcut-icon">/</kbd>
+          </div>
+      </div>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          
+          aria-label="Close search"></button>
+</devsite-search>
+
+        </div>
+
+        
+
+          
+
+          
+
+          
+
+          
+<devsite-language-selector>
+  <ul role="presentation">
+    
+    
+    <li role="presentation">
+      <a role="menuitem" lang="en"
+        >English</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es_419"
+        >Español – América Latina</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fr"
+        >Français</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="id"
+        >Indonesia</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="it"
+        >Italiano</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pl"
+        >Polski</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pt_br"
+        >Português – Brasil</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="vi"
+        >Tiếng Việt</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="tr"
+        >Türkçe</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ru"
+        >Русский</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="he"
+        >עברית</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ar"
+        >العربيّة</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fa"
+        >فارسی</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="hi"
+        >हिंदी</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="bn"
+        >বাংলা</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="th"
+        >ภาษาไทย</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_cn"
+        >中文 – 简体</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ja"
+        >日本語</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ko"
+        >한국어</a>
+    </li>
+    
+  </ul>
+</devsite-language-selector>
+
+
+          
+            <a class="devsite-header-link devsite-top-button button gc-analytics-event "
+    href="//github.com/tensorflow"
+    data-category="Site-Wide Custom Events"
+    data-label="Site header link: GitHub"
+    >
+  GitHub
+</a>
+          
+
+        
+
+        
+          <devsite-user 
+                        
+                        
+                          enable-profiles
+                        
+                        
+                        id="devsite-user">
+            
+              
+              <span class="button devsite-top-button" aria-hidden="true" visually-hidden>Sign in</span>
+            
+          </devsite-user>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="devsite-collapsible-section
+    ">
+    <div class="devsite-header-background">
+      
+        
+          <div class="devsite-product-id-row"
+           >
+            <div class="devsite-product-description-row">
+              
+                
+                <div class="devsite-product-id">
+                  
+                  
+                  
+                    <ul class="devsite-breadcrumb-list"
+  >
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+  <a href="https://www.tensorflow.org/tutorials"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Lower Header"
+      
+        data-value="1"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="1"
+      
+        track-metadata-eventdetail="TensorFlow Core"
+      
+    >
+    
+        TensorFlow Core
+      
+  </a>
+  
+    
+  </li>
+  
+</ul>
+                </div>
+                
+              
+              
+            </div>
+            
+          </div>
+          
+        
+      
+      
+        <div class="devsite-doc-set-nav-row">
+          
+          
+            
+            
+  <devsite-tabs class="lower-tabs">
+
+    <nav class="devsite-tabs-wrapper" aria-label="Lower tabs">
+      
+        
+          <tab  class="devsite-active">
+            
+    <a href="https://www.tensorflow.org/tutorials"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://www.tensorflow.org/tutorials"
+    
+       track-type="nav"
+       track-metadata-position="nav - tutorials"
+       track-metadata-module="primary nav"
+       aria-label="Tutorials, selected" 
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Tutorials"
+         
+           track-name="tutorials"
+         
+       >
+    Tutorials
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+        
+          <tab  >
+            
+    <a href="https://www.tensorflow.org/guide"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://www.tensorflow.org/guide"
+    
+       track-type="nav"
+       track-metadata-position="nav - guide"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Guide"
+         
+           track-name="guide"
+         
+       >
+    Guide
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+        
+          <tab  >
+            
+    <a href="https://www.tensorflow.org/guide/migrate"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://www.tensorflow.org/guide/migrate"
+    
+       track-type="nav"
+       track-metadata-position="nav - migrate to tf2"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Migrate to TF2"
+         
+           track-name="migrate to tf2"
+         
+       >
+    Migrate to TF2
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+        
+          <tab  >
+            
+    <a href="https://github.com/tensorflow/docs/tree/master/site/en/r1"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://github.com/tensorflow/docs/tree/master/site/en/r1"
+    
+       track-type="nav"
+       track-metadata-position="nav - tf 1 ↗"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: TF 1 ↗"
+         
+           track-name="tf 1 ↗"
+         
+       >
+    TF 1 ↗
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+    </nav>
+
+  </devsite-tabs>
+
+          
+          
+        </div>
+      
+    </div>
+  </div>
+
+</div>
+
+
+
+  
+
+  
+</devsite-header>
+      <devsite-book-nav scrollbars >
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="devsite-book-nav-filter"
+     >
+  <span class="filter-list-icon material-icons" aria-hidden="true"></span>
+  <input type="text"
+         placeholder="Filter"
+         
+         aria-label="Type to filter"
+         role="searchbox">
+  
+  <span class="filter-clear-button hidden"
+        data-title="Clear filter"
+        aria-label="Clear filter"
+        role="button"
+        tabindex="0"></span>
+</div>
+
+<nav class="devsite-book-nav devsite-nav nocontent"
+     aria-label="Side menu">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+
+  <a href="/" class="devsite-site-logo-link gc-analytics-event"
+   data-category="Site-Wide Custom Events" data-label="Site logo" track-type="globalNav"
+   track-name="tensorFlow" track-metadata-position="nav"
+   track-metadata-eventDetail="nav">
+  
+  <picture>
+    
+    <img src="https://www.gstatic.com/devrel-devsite/prod/v893b810958a0a119aa54e87c6f4f7fb5af7eacc01ad7a1f488382f3791697b7d/tensorflow/images/lockup.svg" class="devsite-site-logo" alt="TensorFlow">
+  </picture>
+  
+</a>
+
+
+  
+      <span class="devsite-product-name">
+        
+        
+        <ul class="devsite-breadcrumb-list"
+  >
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+      
+    
+  </li>
+  
+</ul>
+      </span>
+    
+
+</div>
+  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+      
+        <ul class="devsite-nav-list">
+          
+            <li class="devsite-nav-item">
+              
+  
+  <a href="/install"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Install"
+      
+        track-name="install"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Install"
+     track-type="globalNav"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Install
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+  
+              
+            </li>
+          
+            <li class="devsite-nav-item">
+              
+  
+  <a href="/learn"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              devsite-nav-active"
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Learn"
+      
+        track-name="learn"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Learn"
+     track-type="globalNav"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Learn
+   </span>
+    
+  
+  </a>
+  
+
+  
+    <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu
+               ">
+      
+<li class="devsite-nav-item">
+
+  
+  <span
+    
+       class="devsite-nav-title"
+       tooltip
+    
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Learn"
+      
+        track-name="learn"
+      
+    >
+  
+    <span class="devsite-nav-text" tooltip menu="Learn">
+      More
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="Learn">
+    </span>
+    
+  
+  </span>
+  
+
+</li>
+
+    </ul>
+  
+              
+                <ul class="devsite-nav-responsive-tabs">
+                  
+                    
+                    
+                    
+                    <li class="devsite-nav-item">
+                      
+  
+  <a href="/tutorials"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              devsite-nav-active"
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Tutorials"
+      
+        track-name="tutorials"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Tutorials"
+     track-type="globalNav"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip menu="_book">
+      Tutorials
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="_book">
+    </span>
+    
+  
+  </a>
+  
+
+  
+                    </li>
+                  
+                    
+                    
+                    
+                    <li class="devsite-nav-item">
+                      
+  
+  <a href="/guide"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Guide"
+      
+        track-name="guide"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Guide"
+     track-type="globalNav"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Guide
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+  
+                    </li>
+                  
+                    
+                    
+                    
+                    <li class="devsite-nav-item">
+                      
+  
+  <a href="/guide/migrate"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Migrate to TF2"
+      
+        track-name="migrate to tf2"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Migrate to TF2"
+     track-type="globalNav"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Migrate to TF2
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+  
+                    </li>
+                  
+                    
+                    
+                    
+                    <li class="devsite-nav-item">
+                      
+  
+  <a href="https://github.com/tensorflow/docs/tree/master/site/en/r1"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: TF 1 ↗"
+      
+        track-name="tf 1 ↗"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: TF 1 ↗"
+     track-type="globalNav"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      TF 1 ↗
+   </span>
+    
+  
+  </a>
+  
+
+  
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li class="devsite-nav-item">
+              
+  
+  <a href="/api"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: API"
+      
+        track-name="api"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: API"
+     track-type="globalNav"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      API
+   </span>
+    
+  
+  </a>
+  
+
+  
+    <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu
+               ">
+      
+<li class="devsite-nav-item">
+
+  
+  <span
+    
+       class="devsite-nav-title"
+       tooltip
+    
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: API"
+      
+        track-name="api"
+      
+    >
+  
+    <span class="devsite-nav-text" tooltip menu="API">
+      More
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="API">
+    </span>
+    
+  
+  </span>
+  
+
+</li>
+
+    </ul>
+  
+              
+            </li>
+          
+            <li class="devsite-nav-item">
+              
+  
+  <a href="/resources/models-datasets"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Ecosystem"
+      
+        track-name="ecosystem"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Ecosystem"
+     track-type="globalNav"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Ecosystem
+   </span>
+    
+  
+  </a>
+  
+
+  
+    <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu
+               ">
+      
+<li class="devsite-nav-item">
+
+  
+  <span
+    
+       class="devsite-nav-title"
+       tooltip
+    
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Ecosystem"
+      
+        track-name="ecosystem"
+      
+    >
+  
+    <span class="devsite-nav-text" tooltip menu="Ecosystem">
+      More
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="Ecosystem">
+    </span>
+    
+  
+  </span>
+  
+
+</li>
+
+    </ul>
+  
+              
+            </li>
+          
+            <li class="devsite-nav-item">
+              
+  
+  <a href="/community"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Community"
+      
+        track-name="community"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Community"
+     track-type="globalNav"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Community
+   </span>
+    
+  
+  </a>
+  
+
+  
+    <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu
+               ">
+      
+<li class="devsite-nav-item">
+
+  
+  <span
+    
+       class="devsite-nav-title"
+       tooltip
+    
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Community"
+      
+        track-name="community"
+      
+    >
+  
+    <span class="devsite-nav-text" tooltip menu="Community">
+      More
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="Community">
+    </span>
+    
+  
+  </span>
+  
+
+</li>
+
+    </ul>
+  
+              
+            </li>
+          
+            <li class="devsite-nav-item">
+              
+  
+  <a href="/about"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Why TensorFlow"
+      
+        track-name="why tensorflow"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Why TensorFlow"
+     track-type="globalNav"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Why TensorFlow
+   </span>
+    
+  
+  </a>
+  
+
+  
+    <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu
+               ">
+      
+<li class="devsite-nav-item">
+
+  
+  <span
+    
+       class="devsite-nav-title"
+       tooltip
+    
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Why TensorFlow"
+      
+        track-name="why tensorflow"
+      
+    >
+  
+    <span class="devsite-nav-text" tooltip menu="Why TensorFlow">
+      More
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="Why TensorFlow">
+    </span>
+    
+  
+  </span>
+  
+
+</li>
+
+    </ul>
+  
+              
+            </li>
+          
+          
+    
+    
+<li class="devsite-nav-item">
+
+  
+  <a href="//github.com/tensorflow"
+    
+       class="devsite-nav-title gc-analytics-event "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: GitHub"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      GitHub
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+  
+          
+        </ul>
+      
+    </div>
+    
+      <div class="devsite-mobile-nav-bottom">
+        
+          
+          <ul class="devsite-nav-list" menu="_book">
+            <li class="devsite-nav-item"><a href="/tutorials"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials"
+      ><span class="devsite-nav-text" tooltip>TensorFlow tutorials</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/tutorials/quickstart/beginner"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/quickstart/beginner"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/quickstart/beginner"
+      ><span class="devsite-nav-text" tooltip>Quickstart for beginners</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/tutorials/quickstart/advanced"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/quickstart/advanced"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/quickstart/advanced"
+      ><span class="devsite-nav-text" tooltip>Quickstart for experts</span></a></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-divider
+           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path">
+        <span class="devsite-nav-text" tooltip>Beginner</span>
+      </div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable
+           devsite-nav-accordion"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>ML basics with Keras</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/tutorials/keras/classification"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/keras/classification"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/keras/classification"
+      ><span class="devsite-nav-text" tooltip>Basic image classification</span></a></li><li class="devsite-nav-item"><a href="/tutorials/keras/text_classification"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/keras/text_classification"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/keras/text_classification"
+      ><span class="devsite-nav-text" tooltip>Basic text classification</span></a></li><li class="devsite-nav-item"><a href="/tutorials/keras/text_classification_with_hub"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/keras/text_classification_with_hub"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/keras/text_classification_with_hub"
+      ><span class="devsite-nav-text" tooltip>Text classification with TF Hub</span></a></li><li class="devsite-nav-item"><a href="/tutorials/keras/regression"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/keras/regression"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/keras/regression"
+      ><span class="devsite-nav-text" tooltip>Regression</span></a></li><li class="devsite-nav-item"><a href="/tutorials/keras/overfit_and_underfit"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/keras/overfit_and_underfit"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/keras/overfit_and_underfit"
+      ><span class="devsite-nav-text" tooltip>Overfit and underfit</span></a></li><li class="devsite-nav-item"><a href="/tutorials/keras/save_and_load"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/keras/save_and_load"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/keras/save_and_load"
+      ><span class="devsite-nav-text" tooltip>Save and load</span></a></li><li class="devsite-nav-item"><a href="/tutorials/keras/keras_tuner"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/keras/keras_tuner"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/keras/keras_tuner"
+      ><span class="devsite-nav-text" tooltip>Tune hyperparameters with the Keras Tuner</span></a></li><li class="devsite-nav-item
+           devsite-nav-external"><a href="https://keras.io/examples/"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: https://keras.io/examples/"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="https://keras.io/examples/"
+      ><span class="devsite-nav-text" tooltip>More examples on keras.io</span><span class="devsite-nav-icon material-icons"
+        data-icon="external"
+        data-title="External"
+        aria-hidden="true"></span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable
+           devsite-nav-accordion"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Load and preprocess data</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/tutorials/load_data/images"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/load_data/images"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/load_data/images"
+      ><span class="devsite-nav-text" tooltip>Images</span></a></li><li class="devsite-nav-item
+           devsite-nav-new"><a href="/tutorials/load_data/video"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/load_data/video"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/load_data/video"
+      ><span class="devsite-nav-text" tooltip>Video</span><span class="devsite-nav-icon material-icons"
+        data-icon="new"
+        data-title="New!"
+        aria-hidden="true"></span></a></li><li class="devsite-nav-item"><a href="/tutorials/load_data/csv"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/load_data/csv"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/load_data/csv"
+      ><span class="devsite-nav-text" tooltip>CSV</span></a></li><li class="devsite-nav-item"><a href="/tutorials/load_data/numpy"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/load_data/numpy"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/load_data/numpy"
+      ><span class="devsite-nav-text" tooltip>NumPy</span></a></li><li class="devsite-nav-item"><a href="/tutorials/load_data/pandas_dataframe"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/load_data/pandas_dataframe"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/load_data/pandas_dataframe"
+      ><span class="devsite-nav-text" tooltip>pandas.DataFrame</span></a></li><li class="devsite-nav-item"><a href="/tutorials/load_data/tfrecord"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/load_data/tfrecord"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/load_data/tfrecord"
+      ><span class="devsite-nav-text" tooltip>TFRecord and tf.Example</span></a></li><li class="devsite-nav-item
+           devsite-nav-external"><a href="https://github.com/tensorflow/io#tensorflow-io"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: https://github.com/tensorflow/io#tensorflow-io"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="https://github.com/tensorflow/io#tensorflow-io"
+      ><span class="devsite-nav-text" tooltip>Additional formats with tf.io</span><span class="devsite-nav-icon material-icons"
+        data-icon="external"
+        data-title="External"
+        aria-hidden="true"></span></a></li><li class="devsite-nav-item"><a href="/tutorials/load_data/text"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/load_data/text"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/load_data/text"
+      ><span class="devsite-nav-text" tooltip>Text</span></a></li><li class="devsite-nav-item
+           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path">
+        <span class="devsite-nav-text" tooltip>More text loading</span>
+      </div></li><li class="devsite-nav-item
+           devsite-nav-external"><a href="/text/guide/unicode"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /text/guide/unicode"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/text/guide/unicode"
+      ><span class="devsite-nav-text" tooltip>Unicode</span><span class="devsite-nav-icon material-icons"
+        data-icon="external"
+        data-title="External"
+        aria-hidden="true"></span></a></li><li class="devsite-nav-item
+           devsite-nav-external"><a href="/text/guide/subwords_tokenizer"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /text/guide/subwords_tokenizer"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/text/guide/subwords_tokenizer"
+      ><span class="devsite-nav-text" tooltip>Subword Tokenization</span><span class="devsite-nav-icon material-icons"
+        data-icon="external"
+        data-title="External"
+        aria-hidden="true"></span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-divider
+           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path">
+        <span class="devsite-nav-text" tooltip>Advanced</span>
+      </div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable
+           devsite-nav-accordion"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Customization</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/tutorials/customization/basics"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/customization/basics"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/customization/basics"
+      ><span class="devsite-nav-text" tooltip>Tensors and operations</span></a></li><li class="devsite-nav-item"><a href="/tutorials/customization/custom_layers"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/customization/custom_layers"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/customization/custom_layers"
+      ><span class="devsite-nav-text" tooltip>Custom layers</span></a></li><li class="devsite-nav-item"><a href="/tutorials/customization/custom_training_walkthrough"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/customization/custom_training_walkthrough"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/customization/custom_training_walkthrough"
+      ><span class="devsite-nav-text" tooltip>Custom training: walkthrough</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable
+           devsite-nav-accordion"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Distributed training</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/tutorials/distribute/keras"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/distribute/keras"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/distribute/keras"
+      ><span class="devsite-nav-text" tooltip>Distributed training with Keras</span></a></li><li class="devsite-nav-item
+           devsite-nav-experimental"><a href="/tutorials/distribute/dtensor_ml_tutorial"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/distribute/dtensor_ml_tutorial"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/distribute/dtensor_ml_tutorial"
+      ><span class="devsite-nav-text" tooltip>Distributed training with DTensors</span><span class="devsite-nav-icon material-icons"
+        data-icon="experimental"
+        data-title="Experimental!"
+        aria-hidden="true"></span></a></li><li class="devsite-nav-item
+           devsite-nav-experimental"><a href="/tutorials/distribute/dtensor_keras_tutorial"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/distribute/dtensor_keras_tutorial"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/distribute/dtensor_keras_tutorial"
+      ><span class="devsite-nav-text" tooltip>Using DTensors with Keras</span><span class="devsite-nav-icon material-icons"
+        data-icon="experimental"
+        data-title="Experimental!"
+        aria-hidden="true"></span></a></li><li class="devsite-nav-item"><a href="/tutorials/distribute/custom_training"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/distribute/custom_training"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/distribute/custom_training"
+      ><span class="devsite-nav-text" tooltip>Custom training loops</span></a></li><li class="devsite-nav-item"><a href="/tutorials/distribute/multi_worker_with_keras"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/distribute/multi_worker_with_keras"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/distribute/multi_worker_with_keras"
+      ><span class="devsite-nav-text" tooltip>Multi-worker training with Keras</span></a></li><li class="devsite-nav-item"><a href="/tutorials/distribute/multi_worker_with_ctl"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/distribute/multi_worker_with_ctl"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/distribute/multi_worker_with_ctl"
+      ><span class="devsite-nav-text" tooltip>Multi-worker training with CTL</span></a></li><li class="devsite-nav-item
+           devsite-nav-experimental"><a href="/tutorials/distribute/parameter_server_training"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/distribute/parameter_server_training"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/distribute/parameter_server_training"
+      ><span class="devsite-nav-text" tooltip>Parameter Server Training</span><span class="devsite-nav-icon material-icons"
+        data-icon="experimental"
+        data-title="Experimental!"
+        aria-hidden="true"></span></a></li><li class="devsite-nav-item"><a href="/tutorials/distribute/save_and_load"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/distribute/save_and_load"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/distribute/save_and_load"
+      ><span class="devsite-nav-text" tooltip>Save and load</span></a></li><li class="devsite-nav-item"><a href="/tutorials/distribute/input"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/distribute/input"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/distribute/input"
+      ><span class="devsite-nav-text" tooltip>Distributed input</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable
+           devsite-nav-accordion"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Vision</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/tutorials/images"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/images"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/images"
+      ><span class="devsite-nav-text" tooltip>Computer vision</span></a></li><li class="devsite-nav-item
+           devsite-nav-external"><a href="https://keras.io/keras_cv/"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: https://keras.io/keras_cv/"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="https://keras.io/keras_cv/"
+      ><span class="devsite-nav-text" tooltip>KerasCV</span><span class="devsite-nav-icon material-icons"
+        data-icon="external"
+        data-title="External"
+        aria-hidden="true"></span></a></li><li class="devsite-nav-item"><a href="/tutorials/images/cnn"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/images/cnn"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/images/cnn"
+      ><span class="devsite-nav-text" tooltip>Convolutional Neural Network</span></a></li><li class="devsite-nav-item"><a href="/tutorials/images/classification"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/images/classification"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/images/classification"
+      ><span class="devsite-nav-text" tooltip>Image classification</span></a></li><li class="devsite-nav-item"><a href="/tutorials/images/transfer_learning"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/images/transfer_learning"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/images/transfer_learning"
+      ><span class="devsite-nav-text" tooltip>Transfer learning and fine-tuning</span></a></li><li class="devsite-nav-item"><a href="/tutorials/images/transfer_learning_with_hub"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/images/transfer_learning_with_hub"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/images/transfer_learning_with_hub"
+      ><span class="devsite-nav-text" tooltip>Transfer learning with TF Hub</span></a></li><li class="devsite-nav-item"><a href="/tutorials/images/data_augmentation"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/images/data_augmentation"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/images/data_augmentation"
+      ><span class="devsite-nav-text" tooltip>Data Augmentation</span></a></li><li class="devsite-nav-item"><a href="/tutorials/images/segmentation"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/images/segmentation"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/images/segmentation"
+      ><span class="devsite-nav-text" tooltip>Image segmentation</span></a></li><li class="devsite-nav-item
+           devsite-nav-external"><a href="/hub/tutorials/tf2_object_detection"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /hub/tutorials/tf2_object_detection"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/hub/tutorials/tf2_object_detection"
+      ><span class="devsite-nav-text" tooltip>Object detection with TF Hub</span><span class="devsite-nav-icon material-icons"
+        data-icon="external"
+        data-title="External"
+        aria-hidden="true"></span></a></li><li class="devsite-nav-item
+           devsite-nav-new"><a href="/tutorials/video/video_classification"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/video/video_classification"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/video/video_classification"
+      ><span class="devsite-nav-text" tooltip>Video classification</span><span class="devsite-nav-icon material-icons"
+        data-icon="new"
+        data-title="New!"
+        aria-hidden="true"></span></a></li><li class="devsite-nav-item
+           devsite-nav-new"><a href="/tutorials/video/transfer_learning_with_movinet"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/video/transfer_learning_with_movinet"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/video/transfer_learning_with_movinet"
+      ><span class="devsite-nav-text" tooltip>Transfer learning with MoViNet</span><span class="devsite-nav-icon material-icons"
+        data-icon="new"
+        data-title="New!"
+        aria-hidden="true"></span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable
+           devsite-nav-accordion"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Text</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/tutorials/text"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/text"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/text"
+      ><span class="devsite-nav-text" tooltip>Text and natural language processing</span></a></li><li class="devsite-nav-item
+           devsite-nav-external"><a href="https://keras.io/guides/keras_nlp/getting_started/"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: https://keras.io/guides/keras_nlp/getting_started/"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="https://keras.io/guides/keras_nlp/getting_started/"
+      ><span class="devsite-nav-text" tooltip>Get started with KerasNLP</span><span class="devsite-nav-icon material-icons"
+        data-icon="external"
+        data-title="External"
+        aria-hidden="true"></span></a></li><li class="devsite-nav-item
+           devsite-nav-external"><a href="/text"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /text"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/text"
+      ><span class="devsite-nav-text" tooltip>Text and NLP guide</span><span class="devsite-nav-icon material-icons"
+        data-icon="external"
+        data-title="External"
+        aria-hidden="true"></span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable
+           devsite-nav-accordion"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Audio</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/tutorials/audio/simple_audio"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/audio/simple_audio"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/audio/simple_audio"
+      ><span class="devsite-nav-text" tooltip>Simple audio recognition</span></a></li><li class="devsite-nav-item"><a href="/tutorials/audio/transfer_learning_audio"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/audio/transfer_learning_audio"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/audio/transfer_learning_audio"
+      ><span class="devsite-nav-text" tooltip>Transfer learning for audio recognition</span></a></li><li class="devsite-nav-item"><a href="/tutorials/audio/music_generation"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/audio/music_generation"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/audio/music_generation"
+      ><span class="devsite-nav-text" tooltip>Generate music with an RNN</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable
+           devsite-nav-accordion"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Structured data</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/tutorials/structured_data/preprocessing_layers"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/structured_data/preprocessing_layers"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/structured_data/preprocessing_layers"
+      ><span class="devsite-nav-text" tooltip>Classify structured data with preprocessing layers</span></a></li><li class="devsite-nav-item"><a href="/tutorials/structured_data/imbalanced_data"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/structured_data/imbalanced_data"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/structured_data/imbalanced_data"
+      ><span class="devsite-nav-text" tooltip>Classification on imbalanced data</span></a></li><li class="devsite-nav-item"><a href="/tutorials/structured_data/time_series"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/structured_data/time_series"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/structured_data/time_series"
+      ><span class="devsite-nav-text" tooltip>Time series forecasting</span></a></li><li class="devsite-nav-item
+           devsite-nav-external"><a href="/decision_forests/tutorials/beginner_colab"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /decision_forests/tutorials/beginner_colab"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/decision_forests/tutorials/beginner_colab"
+      ><span class="devsite-nav-text" tooltip>Decision forest models</span><span class="devsite-nav-icon material-icons"
+        data-icon="external"
+        data-title="External"
+        aria-hidden="true"></span></a></li><li class="devsite-nav-item
+           devsite-nav-external"><a href="/recommenders/examples/quickstart"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /recommenders/examples/quickstart"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/recommenders/examples/quickstart"
+      ><span class="devsite-nav-text" tooltip>Recommenders</span><span class="devsite-nav-icon material-icons"
+        data-icon="external"
+        data-title="External"
+        aria-hidden="true"></span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable
+           devsite-nav-accordion"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Generative</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item
+           devsite-nav-new"><a href="/tutorials/generative/generate_images_with_stable_diffusion"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/generative/generate_images_with_stable_diffusion"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/generative/generate_images_with_stable_diffusion"
+      ><span class="devsite-nav-text" tooltip>Stable Diffusion</span><span class="devsite-nav-icon material-icons"
+        data-icon="new"
+        data-title="New!"
+        aria-hidden="true"></span></a></li><li class="devsite-nav-item"><a href="/tutorials/generative/style_transfer"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/generative/style_transfer"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/generative/style_transfer"
+      ><span class="devsite-nav-text" tooltip>Neural style transfer</span></a></li><li class="devsite-nav-item"><a href="/tutorials/generative/deepdream"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/generative/deepdream"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/generative/deepdream"
+      ><span class="devsite-nav-text" tooltip>DeepDream</span></a></li><li class="devsite-nav-item"><a href="/tutorials/generative/dcgan"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/generative/dcgan"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/generative/dcgan"
+      ><span class="devsite-nav-text" tooltip>DCGAN</span></a></li><li class="devsite-nav-item"><a href="/tutorials/generative/pix2pix"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/generative/pix2pix"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/generative/pix2pix"
+      ><span class="devsite-nav-text" tooltip>Pix2Pix</span></a></li><li class="devsite-nav-item"><a href="/tutorials/generative/cyclegan"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/generative/cyclegan"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/generative/cyclegan"
+      ><span class="devsite-nav-text" tooltip>CycleGAN</span></a></li><li class="devsite-nav-item"><a href="/tutorials/generative/adversarial_fgsm"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/generative/adversarial_fgsm"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/generative/adversarial_fgsm"
+      ><span class="devsite-nav-text" tooltip>Adversarial FGSM</span></a></li><li class="devsite-nav-item"><a href="/tutorials/generative/autoencoder"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/generative/autoencoder"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/generative/autoencoder"
+      ><span class="devsite-nav-text" tooltip>Intro to Autoencoders</span></a></li><li class="devsite-nav-item"><a href="/tutorials/generative/cvae"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/generative/cvae"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/generative/cvae"
+      ><span class="devsite-nav-text" tooltip>Variational Autoencoder</span></a></li><li class="devsite-nav-item"><a href="/tutorials/generative/data_compression"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/generative/data_compression"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/generative/data_compression"
+      ><span class="devsite-nav-text" tooltip>Lossy data compression</span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable
+           devsite-nav-accordion"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Model optimization</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/tutorials/optimization/compression"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/optimization/compression"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/optimization/compression"
+      ><span class="devsite-nav-text" tooltip>Scalable model compression with EPR</span></a></li><li class="devsite-nav-item
+           devsite-nav-external"><a href="/model_optimization"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /model_optimization"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/model_optimization"
+      ><span class="devsite-nav-text" tooltip>TensorFlow model optimization</span><span class="devsite-nav-icon material-icons"
+        data-icon="external"
+        data-title="External"
+        aria-hidden="true"></span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable
+           devsite-nav-accordion"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Model Understanding</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/tutorials/interpretability/integrated_gradients"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/interpretability/integrated_gradients"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/interpretability/integrated_gradients"
+      ><span class="devsite-nav-text" tooltip>Integrated gradients</span></a></li><li class="devsite-nav-item"><a href="/tutorials/understanding/sngp"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/understanding/sngp"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/understanding/sngp"
+      ><span class="devsite-nav-text" tooltip>Uncertainty quantification with SNGP</span></a></li><li class="devsite-nav-item
+           devsite-nav-external"><a href="/probability/examples/Probabilistic_Layers_Regression"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /probability/examples/Probabilistic_Layers_Regression"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/probability/examples/Probabilistic_Layers_Regression"
+      ><span class="devsite-nav-text" tooltip>Probabilistic regression</span><span class="devsite-nav-icon material-icons"
+        data-icon="external"
+        data-title="External"
+        aria-hidden="true"></span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable
+           devsite-nav-accordion"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>Reinforcement learning</span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/tutorials/reinforcement_learning/actor_critic"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/reinforcement_learning/actor_critic"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/reinforcement_learning/actor_critic"
+      ><span class="devsite-nav-text" tooltip>Actor-Critic method</span></a></li><li class="devsite-nav-item
+           devsite-nav-external"><a href="/agents"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /agents"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/agents"
+      ><span class="devsite-nav-text" tooltip>TensorFlow agents</span><span class="devsite-nav-icon material-icons"
+        data-icon="external"
+        data-title="External"
+        aria-hidden="true"></span></a></li></ul></div></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-expandable
+           devsite-nav-accordion
+           devsite-nav-deprecated"><div class="devsite-expandable-nav">
+      <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip>tf.Estimator</span><span class="devsite-nav-icon material-icons"
+        data-icon="deprecated"
+        data-title="Deprecated"
+        aria-hidden="true"></span>
+      </div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/tutorials/estimator/premade"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/estimator/premade"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/estimator/premade"
+      ><span class="devsite-nav-text" tooltip>Premade estimator</span></a></li><li class="devsite-nav-item"><a href="/tutorials/estimator/linear"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/estimator/linear"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/estimator/linear"
+      ><span class="devsite-nav-text" tooltip>Linear model</span></a></li><li class="devsite-nav-item"><a href="/tutorials/estimator/keras_model_to_estimator"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/estimator/keras_model_to_estimator"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/estimator/keras_model_to_estimator"
+      ><span class="devsite-nav-text" tooltip>Keras model to Estimator</span></a></li><li class="devsite-nav-item"><a href="/tutorials/distribute/multi_worker_with_estimator"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/distribute/multi_worker_with_estimator"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/distribute/multi_worker_with_estimator"
+      ><span class="devsite-nav-text" tooltip>Multi-worker training with Estimator</span></a></li><li class="devsite-nav-item"><a href="/tutorials/structured_data/feature_columns"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /tutorials/structured_data/feature_columns"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/tutorials/structured_data/feature_columns"
+      ><span class="devsite-nav-text" tooltip>Feature columns</span></a></li></ul></div></li>
+          </ul>
+        
+        
+          
+    
+  
+    
+      
+      <ul class="devsite-nav-list" menu="Learn"
+          aria-label="Side menu" hidden>
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/learn"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Introduction"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Introduction
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/tutorials"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Tutorials"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Tutorials
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/guide"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Guide"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Guide
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/resources/learn-ml"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Learn ML"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Learn ML
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+      </ul>
+    
+  
+    
+      
+      <ul class="devsite-nav-list" menu="API"
+          aria-label="Side menu" hidden>
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/api/stable"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: TensorFlow (v2.16.1)"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      TensorFlow (v2.16.1)
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/versions"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Versions…"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Versions…
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="https://js.tensorflow.org/api/latest/"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: TensorFlow.js"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      TensorFlow.js
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/lite/api_docs"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: TensorFlow Lite"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      TensorFlow Lite
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/tfx/api_docs"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: TFX"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      TFX
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+      </ul>
+    
+  
+    
+      
+      <ul class="devsite-nav-list" menu="Ecosystem"
+          aria-label="Side menu" hidden>
+        
+          
+            
+              
+<li class="devsite-nav-item devsite-nav-heading">
+
+  
+  <span
+    
+       class="devsite-nav-title"
+       tooltip
+    
+    >
+  
+    <span class="devsite-nav-text" tooltip >
+      LIBRARIES
+   </span>
+    
+  
+  </span>
+  
+
+</li>
+
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/js"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: TensorFlow.js"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      TensorFlow.js
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/lite"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: TensorFlow Lite"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      TensorFlow Lite
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/tfx"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: TFX"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      TFX
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/resources/libraries-extensions"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: All libraries"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      All libraries
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+              
+<li class="devsite-nav-item devsite-nav-heading">
+
+  
+  <span
+    
+       class="devsite-nav-title"
+       tooltip
+    
+    >
+  
+    <span class="devsite-nav-text" tooltip >
+      RESOURCES
+   </span>
+    
+  
+  </span>
+  
+
+</li>
+
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/resources/models-datasets"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Models &amp; datasets"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Models &amp; datasets
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/resources/tools"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Tools"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Tools
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/responsible_ai"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Responsible AI"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Responsible AI
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/resources/recommendation-systems"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Recommendation systems"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Recommendation systems
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+      </ul>
+    
+  
+    
+      
+      <ul class="devsite-nav-list" menu="Community"
+          aria-label="Side menu" hidden>
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/community/groups"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Groups"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Groups
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/community/contribute"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Contribute"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Contribute
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="https://blog.tensorflow.org/"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Blog"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Blog
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="https://discuss.tensorflow.org"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Forum"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Forum
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+      </ul>
+    
+  
+    
+      
+      <ul class="devsite-nav-list" menu="Why TensorFlow"
+          aria-label="Side menu" hidden>
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/about"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: About"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      About
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/about/case-studies"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Case studies"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Case studies
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+      </ul>
+    
+  
+        
+        
+          
+    
+  
+    
+  
+    
+  
+    
+  
+        
+      </div>
+    
+  </div>
+</nav>
+        
+      </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" id="main-content" class="devsite-main-content"
+            
+              has-book-nav
+              has-sidebar
+            >
+          <div class="devsite-sidebar">
+            <div class="devsite-sidebar-content">
+                
+                <devsite-toc class="devsite-nav"
+                            role="navigation"
+                            aria-label="On this page"
+                            depth="2"
+                            scrollbars
+                  ></devsite-toc>
+                <devsite-recommendations-sidebar class="nocontent devsite-nav">
+                </devsite-recommendations-sidebar>
+            </div>
+          </div>
+          <devsite-content>
+            
+              
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="devsite-article"><style>
+      /* Styles inlined from /site-assets/css/style.css */
+/* override theme */
+table img {
+  max-width: 100%;
+}
+
+/* .devsite-terminal virtualenv prompt */
+.tfo-terminal-venv::before {
+  content: "(venv) $ " !important;
+}
+
+/* .devsite-terminal root prompt */
+.tfo-terminal-root::before {
+  content: "# " !important;
+}
+
+/* Used in links for type annotations in function/method signatures */
+.tfo-signature-link a,
+.tfo-signature-link a:visited,
+.tfo-signature-link a:hover,
+.tfo-signature-link a:focus,
+.tfo-signature-link a:hover *,
+.tfo-signature-link a:focus * {
+  text-decoration: none !important;
+}
+
+.tfo-signature-link a,
+.tfo-signature-link a:visited {
+  border-bottom: 1px dotted #1a73e8;
+}
+
+.tfo-signature-link a:focus {
+  border-bottom-style: solid;
+}
+
+/* .devsite-terminal Windows prompt */
+.tfo-terminal-windows::before {
+  content: "C:\\> " !important;
+}
+
+/* .devsite-terminal Windows prompt w/ virtualenv */
+.tfo-terminal-windows-venv::before {
+  content: "(venv) C:\\> " !important;
+}
+
+.tfo-diff-green-one-level + * {
+  background: rgba(175, 245, 162, .6)  !important;
+}
+
+.tfo-diff-green + * > * {
+  background: rgba(175, 245, 162, .6)  !important;
+}
+
+.tfo-diff-green-list + ul > li:first-of-type {
+  background: rgba(175, 245, 162, .6)  !important;
+}
+
+.tfo-diff-red-one-level + * {
+  background: rgba(255, 230, 230, .6)  !important;
+  text-decoration: line-through  !important;
+}
+
+.tfo-diff-red + * > * {
+  background: rgba(255, 230, 230, .6)  !important;
+  text-decoration: line-through  !important;
+}
+
+.tfo-diff-red-list + ul > li:first-of-type {
+  background: rgba(255, 230, 230, .6)  !important;
+  text-decoration: line-through  !important;
+}
+
+devsite-code .tfo-notebook-code-cell-output {
+  max-height: 300px;
+  overflow: auto;
+  background: rgba(255, 247, 237, 1);  /* orange bg to distinguish from input code cells */
+}
+
+devsite-code .tfo-notebook-code-cell-output + .devsite-code-buttons-container button {
+  background: rgba(255, 247, 237, .7);  /* orange bg to distinguish from input code cells */
+}
+
+devsite-code[dark-code] .tfo-notebook-code-cell-output {
+  background: rgba(64, 78, 103, 1);  /* medium slate */
+}
+
+devsite-code[dark-code] .tfo-notebook-code-cell-output + .devsite-code-buttons-container button {
+  background: rgba(64, 78, 103, .7);  /* medium slate */
+}
+
+/* override default table styles for notebook buttons */
+.devsite-table-wrapper .tfo-notebook-buttons {
+  display: block;
+  width: auto;
+}
+
+.tfo-notebook-buttons td {
+  display: inline-block;
+  padding: 0 16px 16px 0;
+}
+
+/* from DevSite's buttons.scss */
+.tfo-notebook-buttons a,
+.tfo-notebook-buttons :link,
+.tfo-notebook-buttons :visited {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  align-self: var(--devsite-button-align-self);
+  background: var(--devsite-button-background, var(--devsite-background-1));
+  border: var(--devsite-button-border, 0);
+  border-radius: var(--devsite-button-border-radius, 2px);
+  box-sizing: border-box;
+  color: var(--devsite-button-color);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font: var(--devsite-button-font, 500 14px/36px var(--devsite-primary-font-family));
+  height: var(--devsite-button-height, 36px);
+  letter-spacing: var(--devsite-button-letter-spacing, 0);
+  line-height: var(--devsite-button-line-height, 36px);
+  margin: var(--devsite-button-margin, 0);
+  margin-inline-end: var(--devsite-button-margin-x-end);
+  max-width: var(--devsite-button-max-width, none);
+  min-width: 36px;
+  outline: 0;
+  overflow: hidden;
+  padding: var(--devsite-button-with-icon-padding, 0 16px);
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  text-transform: var(--devsite-button-text-transform, uppercase);
+  transition:
+    background-color .2s,
+    border .2s;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: var(--devsite-button-width, auto);
+}
+
+.tfo-notebook-buttons a:hover,
+.tfo-notebook-buttons a:focus {
+  background: var(--devsite-button-background-hover);
+  border: var(--devsite-button-border-hover, 0);
+  color: var(--devsite-button-color-hover, var(--devsite-button-color));
+  text-decoration: var(--devsite-button-text-decoration-hover, none);
+}
+
+.tfo-notebook-buttons a:active {
+  background: var(--devsite-button-background-active);
+  border: var(--devsite-button-border-active, 0);
+  transform: var(--devsite-button-transform-active, none);
+}
+
+.tfo-notebook-buttons tr {
+  background: 0;
+  border: 0;
+}
+
+/* on rendered notebook page,
+   remove link to webpage since we're already here */
+.tfo-notebook-buttons:not(.tfo-api) td:first-child {
+  display: none;
+}
+
+.tfo-notebook-buttons td > a > img {
+  margin: 0 8px 0 -4px;
+  height: 20px;
+}
+
+[appearance='dark'] .tfo-notebook-buttons td > a > img {
+  filter: invert(1);
+}
+
+@media (prefers-color-scheme: dark) {
+  [appearance='device'] .tfo-notebook-buttons td > a > img {
+    filter: invert(1);
+  }
+}
+
+/* landing pages */
+
+.tfo-landing-row-item-inset-white {
+  background-color: #fff;
+  padding: 32px;
+}
+
+.tfo-landing-row-item-inset-white ol,
+.tfo-landing-row-item-inset-white ul {
+  padding-left: 20px;
+}
+
+/* colab callout button */
+.colab-callout-row devsite-code {
+  border-radius: 8px 8px 0 0;
+  box-shadow: none;
+}
+
+.colab-callout-footer {
+  background: #e3e4e7;
+  border-radius: 0 0 8px 8px;
+  color: #37474f;
+  padding: 20px;
+}
+
+.colab-callout-row devsite-code[dark-code] + .colab-callout-footer {
+  background: #3f4f66;
+}
+
+
+.colab-callout-footer > .button {
+  margin-top: 4px;
+  color: #ff5c00;
+}
+
+.colab-callout-footer > a > span {
+  vertical-align: middle;
+  color: #37474f;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.colab-callout-row devsite-code[dark-code] + .colab-callout-footer > a > span {
+  color: #fff;
+}
+
+a.colab-button {
+  background: rgba(255, 255, 255, .75);
+  border: solid 1px rgba(0, 0, 0, .08);
+  border-bottom-color: rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  color: #aaa;
+  display: inline-block;
+  font-size: 11px !important;
+  font-weight: 300;
+  line-height: 16px;
+  padding: 4px 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a.colab-button:hover {
+  background: white;
+  border-color: rgba(0, 0, 0, .2);
+  color: #666;
+}
+
+a.colab-button span {
+  background: url(/images/colab_logo_button.svg) no-repeat 1px 1px / 20px;
+  border-radius: 4px;
+  display: inline-block;
+  padding-left: 24px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .tfo-notebook-buttons td {
+    display: block;
+  }
+}
+
+/* guide and tutorials landing page cards and sections */
+
+.tfo-landing-page-card {
+  padding: 16px;
+  box-shadow: 0 0 36px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+/* Page section headings */
+.tfo-landing-page-heading h2, h2.tfo-landing-page-heading {
+  font-family: "Google Sans", sans-serif;
+  color: #425066;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+/* Item title headings */
+.tfo-landing-page-heading h3, h3.tfo-landing-page-heading,
+.tfo-landing-page-card h3, h3.tfo-landing-page-card {
+  font-family: "Google Sans", sans-serif;
+  color: #425066;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+/* List of tutorials notebooks for subsites */
+.tfo-landing-page-resources-ul {
+  padding-left: 15px
+}
+
+.tfo-landing-page-resources-ul > li {
+  margin: 6px 0;
+}
+
+/* Temporary fix to hide product description in header on landing pages */
+devsite-header .devsite-product-description {
+  display: none;
+}
+
+      </style>
+  
+  
+  
+  
+  
+
+  <div class="devsite-article-meta nocontent" role="navigation">
+    
+    
+    <ul class="devsite-breadcrumb-list"
+  
+    aria-label="Breadcrumb">
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+  <a href="https://www.tensorflow.org/"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="1"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="1"
+      
+        track-metadata-eventdetail="TensorFlow"
+      
+    >
+    
+        TensorFlow
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://www.tensorflow.org/learn"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="2"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="2"
+      
+        track-metadata-eventdetail=""
+      
+    >
+    
+        Learn
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://www.tensorflow.org/tutorials"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="3"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="3"
+      
+        track-metadata-eventdetail="TensorFlow Core"
+      
+    >
+    
+        TensorFlow Core
+      
+  </a>
+  
+    
+  </li>
+  
+</ul>
+    
+      
+    <devsite-thumb-rating position="header">
+    </devsite-thumb-rating>
+  
+    
+  </div>
+  
+    <h1 class="devsite-page-title" tabindex="-1">
+      TensorFlow 2 quickstart for beginners<devsite-actions hidden data-nosnippet><devsite-feature-tooltip
+      ack-key="AckCollectionsBookmarkTooltipDismiss"
+      analytics-category="Site-Wide Custom Events"
+      analytics-action-show="Callout Profile displayed"
+      analytics-action-close="Callout Profile dismissed"
+      analytics-label="Create Collection Callout"
+      class="devsite-page-bookmark-tooltip nocontent"
+      dismiss-button="true"
+      id="devsite-collections-dropdown"
+      
+      dismiss-button-text="Dismiss"
+
+      
+      close-button-text="Got it">
+
+    
+    
+      <devsite-bookmark></devsite-bookmark>
+    
+
+    <span slot="popout-heading">
+      
+      Stay organized with collections
+    </span>
+    <span slot="popout-contents">
+      
+      Save and categorize content based on your preferences.
+    </span>
+  </devsite-feature-tooltip></devsite-actions>
+  
+      
+    </h1>
+  <div class="devsite-page-title-meta"><devsite-view-release-notes></devsite-view-release-notes></div>
+  
+
+  <devsite-toc class="devsite-nav"
+    depth="2"
+    devsite-toc-embedded
+    >
+  </devsite-toc>
+  
+    
+  <div class="devsite-article-body clearfix
+  ">
+
+  
+    
+    
+<p></p>
+
+<!-- DO NOT EDIT! Automatically generated file. -->
+
+<div itemscope itemtype="http://developers.google.com/ReferenceObject">
+<meta itemprop="name" content="TensorFlow 2 quickstart for beginners" />
+<meta itemprop="path" content="Guide & Tutorials" />
+<meta itemprop="property" content="tf.keras.Sequential"/>
+<meta itemprop="property" content="tf.keras.layers.Dense"/>
+<meta itemprop="property" content="tf.keras.layers.Dropout"/>
+<meta itemprop="property" content="tf.keras.layers.Flatten"/>
+<meta itemprop="property" content="tf.keras.layers.Softmax"/>
+<meta itemprop="property" content="tf.keras.losses.SparseCategoricalCrossentropy"/>
+<meta itemprop="property" content="tf.nn.softmax"/>
+</div>
+
+
+
+<table class="tfo-notebook-buttons" align="left">
+  <td>
+    <a target="_blank" href="https://www.tensorflow.org/tutorials/quickstart/beginner"><img src="https://www.tensorflow.org/images/tf_logo_32px.png">View on TensorFlow.org</a>
+  </td>
+  <td>
+    <a target="_blank" href="https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/quickstart/beginner.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png">Run in Google Colab</a>
+  </td>
+  <td>
+    <a target="_blank" href="https://github.com/tensorflow/docs/blob/master/site/en/tutorials/quickstart/beginner.ipynb"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png">View source on GitHub</a>
+  </td>
+  <td>
+    <a href="https://storage.googleapis.com/tensorflow_docs/docs/site/en/tutorials/quickstart/beginner.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png">Download notebook</a>
+  </td>
+</table>
+
+<p>This short introduction uses <a href="https://www.tensorflow.org/guide/keras/overview">Keras</a> to:</p>
+
+<ol>
+<li>Load a prebuilt dataset.</li>
+<li>Build a neural network machine learning model that classifies images.</li>
+<li>Train this neural network.</li>
+<li>Evaluate the accuracy of the model.</li>
+</ol>
+
+<p>This tutorial is a <a href="https://colab.research.google.com/notebooks/welcome.ipynb">Google Colaboratory</a> notebook. Python programs are run directly in the browser—a great way to learn and use TensorFlow. To follow this tutorial, run the notebook in Google Colab by clicking the button at the top of this page.</p>
+
+<ol>
+<li>In Colab, connect to a Python runtime: At the top-right of the menu bar, select <em>CONNECT</em>.</li>
+<li>To run all the code in the notebook, select <strong>Runtime</strong> &gt; <strong>Run all</strong>. To run the code cells one at a time, hover over each cell and select the <strong>Run cell</strong> icon.</li>
+</ol>
+
+<p><img src="/static/tutorials/quickstart/images/beginner/run_cell_icon.png" alt="Run cell icon"></p>
+
+<h2 id="set_up_tensorflow" data-text="Set up TensorFlow" tabindex="-1">Set up TensorFlow</h2>
+
+<p>Import TensorFlow into your program to get started:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Python"><code translate="no" dir="ltr"><span class="devsite-syntax-kn">import</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nn">tensorflow</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-k">as</span><span class="devsite-syntax-w"> </span><span class="devsite-syntax-nn">tf</span>
+<span class="devsite-syntax-nb">print</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-s2">"TensorFlow version:"</span><span class="devsite-syntax-p">,</span> <span class="devsite-syntax-n">tf</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">__version__</span><span class="devsite-syntax-p">)</span>
+</code></pre></devsite-code>
+<div></div><devsite-code><pre class="tfo-notebook-code-cell-output" translate="no" dir="ltr" is-upgraded>
+2024-08-16 07&colon;45&colon;15.387747&colon; E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc&colon;485] Unable to register cuFFT factory&colon; Attempting to register factory for plugin cuFFT when one has already been registered
+2024-08-16 07&colon;45&colon;15.408731&colon; E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc&colon;8454] Unable to register cuDNN factory&colon; Attempting to register factory for plugin cuDNN when one has already been registered
+2024-08-16 07&colon;45&colon;15.415209&colon; E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc&colon;1452] Unable to register cuBLAS factory&colon; Attempting to register factory for plugin cuBLAS when one has already been registered
+TensorFlow version&colon; 2.17.0
+</pre></devsite-code>
+
+<p>If you are following along in your own development environment, rather than <a href="https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/quickstart/beginner.ipynb">Colab</a>, see the <a href="https://www.tensorflow.org/install">install guide</a> for setting up TensorFlow for development.</p>
+<aside class="note"><strong>Note:</strong><span> Make sure you have upgraded to the latest <code translate="no" dir="ltr">pip</code> to install the TensorFlow 2 package if you are using your own development environment. See the <a href="https://www.tensorflow.org/install">install guide</a> for details.</span></aside>
+<h2 id="load_a_dataset" data-text="Load a dataset" tabindex="-1">Load a dataset</h2>
+
+<p>Load and prepare the MNIST dataset. The pixel values of the images range from 0 through 255. Scale these values to a range of 0 to 1 by dividing the values by <code translate="no" dir="ltr">255.0</code>. This also converts the sample data from integers to floating-point numbers:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Python"><code translate="no" dir="ltr"><span class="devsite-syntax-n">mnist</span> <span class="devsite-syntax-o">=</span> <span class="devsite-syntax-n">tf</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">keras</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">datasets</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">mnist</span>
+
+<span class="devsite-syntax-p">(</span><span class="devsite-syntax-n">x_train</span><span class="devsite-syntax-p">,</span> <span class="devsite-syntax-n">y_train</span><span class="devsite-syntax-p">),</span> <span class="devsite-syntax-p">(</span><span class="devsite-syntax-n">x_test</span><span class="devsite-syntax-p">,</span> <span class="devsite-syntax-n">y_test</span><span class="devsite-syntax-p">)</span> <span class="devsite-syntax-o">=</span> <span class="devsite-syntax-n">mnist</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">load_data</span><span class="devsite-syntax-p">()</span>
+<span class="devsite-syntax-n">x_train</span><span class="devsite-syntax-p">,</span> <span class="devsite-syntax-n">x_test</span> <span class="devsite-syntax-o">=</span> <span class="devsite-syntax-n">x_train</span> <span class="devsite-syntax-o">/</span> <span class="devsite-syntax-mf">255.0</span><span class="devsite-syntax-p">,</span> <span class="devsite-syntax-n">x_test</span> <span class="devsite-syntax-o">/</span> <span class="devsite-syntax-mf">255.0</span>
+</code></pre></devsite-code>
+<h2 id="build_a_machine_learning_model" data-text="Build a machine learning model" tabindex="-1">Build a machine learning model</h2>
+
+<p>Build a <a href="https://www.tensorflow.org/api_docs/python/tf/keras/Sequential"><code translate="no" dir="ltr">tf.keras.Sequential</code></a> model:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Python"><code translate="no" dir="ltr"><span class="devsite-syntax-n">model</span> <span class="devsite-syntax-o">=</span> <span class="devsite-syntax-n">tf</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">keras</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">models</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">Sequential</span><span class="devsite-syntax-p">([</span>
+  <span class="devsite-syntax-n">tf</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">keras</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">layers</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">Flatten</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-n">input_shape</span><span class="devsite-syntax-o">=</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-mi">28</span><span class="devsite-syntax-p">,</span> <span class="devsite-syntax-mi">28</span><span class="devsite-syntax-p">)),</span>
+  <span class="devsite-syntax-n">tf</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">keras</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">layers</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">Dense</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-mi">128</span><span class="devsite-syntax-p">,</span> <span class="devsite-syntax-n">activation</span><span class="devsite-syntax-o">=</span><span class="devsite-syntax-s1">'relu'</span><span class="devsite-syntax-p">),</span>
+  <span class="devsite-syntax-n">tf</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">keras</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">layers</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">Dropout</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-mf">0.2</span><span class="devsite-syntax-p">),</span>
+  <span class="devsite-syntax-n">tf</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">keras</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">layers</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">Dense</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-mi">10</span><span class="devsite-syntax-p">)</span>
+<span class="devsite-syntax-p">])</span>
+</code></pre></devsite-code>
+<div></div><devsite-code><pre class="tfo-notebook-code-cell-output" translate="no" dir="ltr" is-upgraded>
+/tmpfs/src/tf_docs_env/lib/python3.9/site-packages/keras/src/layers/reshaping/flatten.py&colon;37&colon; UserWarning&colon; Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(**kwargs)
+WARNING&colon; All log messages before absl&colon;&colon;InitializeLog() is called are written to STDERR
+I0000 00&colon;00&colon;1723794318.490455  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794318.494342  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794318.497584  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794318.501312  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794318.512702  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794318.516197  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794318.519187  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794318.522647  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794318.526047  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794318.529503  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794318.532428  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794318.535893  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.771712  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.773840  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.775826  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.777872  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.779874  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.781821  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.783693  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.785644  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.787540  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.789499  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.791369  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.793317  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.831749  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.833814  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.835738  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.837736  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.839701  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.841655  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.843526  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.845500  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.847443  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.849923  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.852250  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+I0000 00&colon;00&colon;1723794319.854736  241277 cuda_executor.cc&colon;1015] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https&colon;//github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+</pre></devsite-code>
+
+<p><a href="https://www.tensorflow.org/guide/keras/sequential_model"><code translate="no" dir="ltr">Sequential</code></a> is useful for stacking layers where each layer has one input <a href="https://www.tensorflow.org/guide/tensor">tensor</a> and one output tensor. Layers are functions with a known mathematical structure that can be reused and have trainable variables. Most TensorFlow models are composed of layers. This model uses the <a href="https://www.tensorflow.org/api_docs/python/tf/keras/layers/Flatten"><code translate="no" dir="ltr">Flatten</code></a>, <a href="https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dense"><code translate="no" dir="ltr">Dense</code></a>, and <a href="https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dropout"><code translate="no" dir="ltr">Dropout</code></a> layers.</p>
+
+<p>For each example, the model returns a vector of <a href="https://developers.google.com/machine-learning/glossary#logits">logits</a> or <a href="https://developers.google.com/machine-learning/glossary#log-odds">log-odds</a> scores, one for each class.</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Python"><code translate="no" dir="ltr"><span class="devsite-syntax-n">predictions</span> <span class="devsite-syntax-o">=</span> <span class="devsite-syntax-n">model</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-n">x_train</span><span class="devsite-syntax-p">[:</span><span class="devsite-syntax-mi">1</span><span class="devsite-syntax-p">])</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">numpy</span><span class="devsite-syntax-p">()</span>
+<span class="devsite-syntax-n">predictions</span>
+</code></pre></devsite-code>
+<div></div><devsite-code><pre class="tfo-notebook-code-cell-output" translate="no" dir="ltr" is-upgraded>
+array([[ 0.68130803, -0.03935227, -0.53304887,  0.22200397, -0.3079031 ,
+        -0.6267688 ,  0.43393654,  0.5691322 ,  0.31098977,  0.32141146]],
+      dtype=float32)
+</pre></devsite-code>
+
+<p>The <a href="https://www.tensorflow.org/api_docs/python/tf/nn/softmax"><code translate="no" dir="ltr">tf.nn.softmax</code></a> function converts these logits to <em>probabilities</em> for each class: </p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Python"><code translate="no" dir="ltr"><span class="devsite-syntax-n">tf</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">nn</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">softmax</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-n">predictions</span><span class="devsite-syntax-p">)</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">numpy</span><span class="devsite-syntax-p">()</span>
+</code></pre></devsite-code>
+<div></div><devsite-code><pre class="tfo-notebook-code-cell-output" translate="no" dir="ltr" is-upgraded>
+array([[0.16339162, 0.07947874, 0.04851112, 0.10321827, 0.06076043,
+        0.0441712 , 0.12758444, 0.14605366, 0.11282429, 0.11400625]],
+      dtype=float32)
+</pre></devsite-code>
+<aside class="note"><strong>Note:</strong><span> It is possible to bake the <a href="https://www.tensorflow.org/api_docs/python/tf/nn/softmax"><code translate="no" dir="ltr">tf.nn.softmax</code></a> function into the activation function for the last layer of the network. While this can make the model output more directly interpretable, this approach is discouraged as it&#39;s impossible to provide an exact and numerically stable loss calculation for all models when using a softmax output. </span></aside>
+<p>Define a loss function for training using <a href="https://www.tensorflow.org/api_docs/python/tf/keras/losses/SparseCategoricalCrossentropy"><code translate="no" dir="ltr">losses.SparseCategoricalCrossentropy</code></a>:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Python"><code translate="no" dir="ltr"><span class="devsite-syntax-n">loss_fn</span> <span class="devsite-syntax-o">=</span> <span class="devsite-syntax-n">tf</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">keras</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">losses</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">SparseCategoricalCrossentropy</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-n">from_logits</span><span class="devsite-syntax-o">=</span><span class="devsite-syntax-kc">True</span><span class="devsite-syntax-p">)</span>
+</code></pre></devsite-code>
+<p>The loss function takes a vector of ground truth values and a vector of logits and returns a scalar loss for each example. This loss is equal to the negative log probability of the true class: The loss is zero if the model is sure of the correct class.</p>
+
+<p>This untrained model gives probabilities close to random (1/10 for each class), so the initial loss should be close to <code translate="no" dir="ltr">-tf.math.log(1/10) ~= 2.3</code>.</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Python"><code translate="no" dir="ltr"><span class="devsite-syntax-n">loss_fn</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-n">y_train</span><span class="devsite-syntax-p">[:</span><span class="devsite-syntax-mi">1</span><span class="devsite-syntax-p">],</span> <span class="devsite-syntax-n">predictions</span><span class="devsite-syntax-p">)</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">numpy</span><span class="devsite-syntax-p">()</span>
+</code></pre></devsite-code>
+<div></div><devsite-code><pre class="tfo-notebook-code-cell-output" translate="no" dir="ltr" is-upgraded>
+3.1196823
+</pre></devsite-code>
+
+<p>Before you start training, configure and compile the model using Keras <a href="https://www.tensorflow.org/api_docs/python/tf/keras/Model#compile"><code translate="no" dir="ltr">Model.compile</code></a>. Set the <a href="https://www.tensorflow.org/api_docs/python/tf/keras/optimizers"><code translate="no" dir="ltr">optimizer</code></a> class to <code translate="no" dir="ltr">adam</code>, set the <code translate="no" dir="ltr">loss</code> to the <code translate="no" dir="ltr">loss_fn</code> function you defined earlier, and specify a metric to be evaluated for the model by setting the <code translate="no" dir="ltr">metrics</code> parameter to <code translate="no" dir="ltr">accuracy</code>.</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Python"><code translate="no" dir="ltr"><span class="devsite-syntax-n">model</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">compile</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-n">optimizer</span><span class="devsite-syntax-o">=</span><span class="devsite-syntax-s1">'adam'</span><span class="devsite-syntax-p">,</span>
+              <span class="devsite-syntax-n">loss</span><span class="devsite-syntax-o">=</span><span class="devsite-syntax-n">loss_fn</span><span class="devsite-syntax-p">,</span>
+              <span class="devsite-syntax-n">metrics</span><span class="devsite-syntax-o">=</span><span class="devsite-syntax-p">[</span><span class="devsite-syntax-s1">'accuracy'</span><span class="devsite-syntax-p">])</span>
+</code></pre></devsite-code>
+<h2 id="train_and_evaluate_your_model" data-text="Train and evaluate your model" tabindex="-1">Train and evaluate your model</h2>
+
+<p>Use the <a href="https://www.tensorflow.org/api_docs/python/tf/keras/Model#fit"><code translate="no" dir="ltr">Model.fit</code></a> method to adjust your model parameters and minimize the loss: </p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Python"><code translate="no" dir="ltr"><span class="devsite-syntax-n">model</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">fit</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-n">x_train</span><span class="devsite-syntax-p">,</span> <span class="devsite-syntax-n">y_train</span><span class="devsite-syntax-p">,</span> <span class="devsite-syntax-n">epochs</span><span class="devsite-syntax-o">=</span><span class="devsite-syntax-mi">5</span><span class="devsite-syntax-p">)</span>
+</code></pre></devsite-code>
+<div></div><devsite-code><pre class="tfo-notebook-code-cell-output" translate="no" dir="ltr" is-upgraded>
+Epoch 1/5
+WARNING&colon; All log messages before absl&colon;&colon;InitializeLog() is called are written to STDERR
+I0000 00&colon;00&colon;1723794322.305243  241442 service.cc&colon;146] XLA service 0x7effb8008d30 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices&colon;
+I0000 00&colon;00&colon;1723794322.305276  241442 service.cc&colon;154]   StreamExecutor device (0)&colon; Tesla T4, Compute Capability 7.5
+I0000 00&colon;00&colon;1723794322.305281  241442 service.cc&colon;154]   StreamExecutor device (1)&colon; Tesla T4, Compute Capability 7.5
+I0000 00&colon;00&colon;1723794322.305284  241442 service.cc&colon;154]   StreamExecutor device (2)&colon; Tesla T4, Compute Capability 7.5
+I0000 00&colon;00&colon;1723794322.305287  241442 service.cc&colon;154]   StreamExecutor device (3)&colon; Tesla T4, Compute Capability 7.5
+112/1875 ━━━━━━━━━━━━━━━━━━━━ 2s 1ms/step - accuracy&colon; 0.6089 - loss&colon; 1.3300
+I0000 00&colon;00&colon;1723794323.392324  241442 device_compiler.h&colon;188] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 4s 1ms/step - accuracy&colon; 0.8622 - loss&colon; 0.4811
+Epoch 2/5
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 2s 1ms/step - accuracy&colon; 0.9547 - loss&colon; 0.1539
+Epoch 3/5
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 2s 1ms/step - accuracy&colon; 0.9676 - loss&colon; 0.1107
+Epoch 4/5
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 2s 1ms/step - accuracy&colon; 0.9738 - loss&colon; 0.0843
+Epoch 5/5
+1875/1875 ━━━━━━━━━━━━━━━━━━━━ 2s 1ms/step - accuracy&colon; 0.9764 - loss&colon; 0.0769
+&lt;keras.src.callbacks.history.History at 0x7f0184ec7490&gt;
+</pre></devsite-code>
+
+<p>The <a href="https://www.tensorflow.org/api_docs/python/tf/keras/Model#evaluate"><code translate="no" dir="ltr">Model.evaluate</code></a> method checks the model&#39;s performance, usually on a <a href="https://developers.google.com/machine-learning/glossary#validation-set">validation set</a> or <a href="https://developers.google.com/machine-learning/glossary#test-set">test set</a>.</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Python"><code translate="no" dir="ltr"><span class="devsite-syntax-n">model</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">evaluate</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-n">x_test</span><span class="devsite-syntax-p">,</span>  <span class="devsite-syntax-n">y_test</span><span class="devsite-syntax-p">,</span> <span class="devsite-syntax-n">verbose</span><span class="devsite-syntax-o">=</span><span class="devsite-syntax-mi">2</span><span class="devsite-syntax-p">)</span>
+</code></pre></devsite-code>
+<div></div><devsite-code><pre class="tfo-notebook-code-cell-output" translate="no" dir="ltr" is-upgraded>
+313/313 - 1s - 3ms/step - accuracy&colon; 0.9782 - loss&colon; 0.0729
+[0.07293704897165298, 0.9782000184059143]
+</pre></devsite-code>
+
+<p>The image classifier is now trained to ~98% accuracy on this dataset. To learn more, read the <a href="https://www.tensorflow.org/tutorials/">TensorFlow tutorials</a>.</p>
+
+<p>If you want your model to return a probability, you can wrap the trained model, and attach the softmax to it:</p>
+<div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Python"><code translate="no" dir="ltr"><span class="devsite-syntax-n">probability_model</span> <span class="devsite-syntax-o">=</span> <span class="devsite-syntax-n">tf</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">keras</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">Sequential</span><span class="devsite-syntax-p">([</span>
+  <span class="devsite-syntax-n">model</span><span class="devsite-syntax-p">,</span>
+  <span class="devsite-syntax-n">tf</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">keras</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">layers</span><span class="devsite-syntax-o">.</span><span class="devsite-syntax-n">Softmax</span><span class="devsite-syntax-p">()</span>
+<span class="devsite-syntax-p">])</span>
+</code></pre></devsite-code><div></div><devsite-code><pre class="devsite-click-to-copy" translate="no" dir="ltr" is-upgraded syntax="Python"><code translate="no" dir="ltr"><span class="devsite-syntax-n">probability_model</span><span class="devsite-syntax-p">(</span><span class="devsite-syntax-n">x_test</span><span class="devsite-syntax-p">[:</span><span class="devsite-syntax-mi">5</span><span class="devsite-syntax-p">])</span>
+</code></pre></devsite-code>
+<div></div><devsite-code><pre class="tfo-notebook-code-cell-output" translate="no" dir="ltr" is-upgraded>
+&lt;tf.Tensor&colon; shape=(5, 10), dtype=float32, numpy=
+array([[1.5427084e-07, 7.5027339e-11, 3.1343968e-06, 4.6326011e-05,
+        8.9990645e-13, 1.5266414e-07, 2.0456495e-13, 9.9994934e-01,
+        2.1858141e-07, 7.8530559e-07],
+       [1.7771253e-08, 8.4947787e-05, 9.9989736e-01, 1.8331458e-06,
+        8.3026415e-15, 3.4793761e-08, 6.2480517e-08, 7.9319728e-12,
+        1.5733674e-05, 3.5440111e-15],
+       [3.3602277e-07, 9.9804592e-01, 5.7737787e-05, 5.8099768e-06,
+        6.3599517e-05, 2.3768812e-06, 2.3459031e-06, 1.6781164e-03,
+        1.4260423e-04, 1.0617223e-06],
+       [9.9997318e-01, 8.7561805e-11, 9.8983969e-07, 9.0878149e-10,
+        1.0803159e-07, 3.3033965e-07, 2.3622524e-05, 6.7567669e-07,
+        4.7765565e-09, 1.1131582e-06],
+       [1.1404303e-05, 2.4895797e-09, 6.0792736e-06, 4.9114313e-08,
+        9.9449867e-01, 5.9158310e-06, 2.9842497e-05, 4.8574508e-05,
+        8.5193824e-06, 5.3910208e-03]], dtype=float32)&gt;
+</pre></devsite-code>
+
+<h2 id="conclusion" data-text="Conclusion" tabindex="-1">Conclusion</h2>
+
+<p>Congratulations! You have trained a machine learning model using a prebuilt dataset using the <a href="https://www.tensorflow.org/guide/keras/overview">Keras</a> API.</p>
+
+<p>For more examples of using Keras, check out the <a href="https://www.tensorflow.org/tutorials/keras/">tutorials</a>. To learn more about building models with Keras, read the <a href="https://www.tensorflow.org/guide/keras">guides</a>. If you want learn more about loading and preparing data, see the tutorials on <a href="https://www.tensorflow.org/tutorials/load_data/images">image data loading</a> or <a href="https://www.tensorflow.org/tutorials/load_data/csv">CSV data loading</a>.</p>
+
+  
+
+  
+</div>
+
+  
+    
+    
+      
+    <devsite-thumb-rating position="footer">
+    </devsite-thumb-rating>
+  
+       
+    
+    
+  
+
+  <div class="devsite-floating-action-buttons"></div></article>
+
+
+<devsite-content-footer class="nocontent">
+  <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>
+  <p>Last updated 2024-08-16 UTC.</p>
+</devsite-content-footer>
+
+
+<devsite-notification
+>
+</devsite-notification>
+
+
+  
+<div class="devsite-content-data">
+  
+  
+    <template class="devsite-content-data-template">
+      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2024-08-16 UTC."],[],[]]
+    </template>
+  
+</div>
+            
+          </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+          
+            
+          
+        </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+          
+            
+<nav class="devsite-footer-linkboxes nocontent" aria-label="Footer links">
+  
+  <ul class="devsite-footer-linkboxes-list">
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Stay connected</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//blog.tensorflow.org"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+          
+            Blog
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//discuss.tensorflow.org"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 2)"
+            >
+            
+          
+            Forum
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//github.com/tensorflow/"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 3)"
+            >
+            
+          
+            GitHub
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//twitter.com/tensorflow"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 4)"
+            >
+            
+          
+            Twitter
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//youtube.com/tensorflow"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 5)"
+            >
+            
+              
+              
+            
+          
+            YouTube
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Support</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//github.com/tensorflow/tensorflow/issues"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+          
+            Issue tracker
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//github.com/tensorflow/tensorflow/blob/master/RELEASE.md"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 2)"
+            >
+            
+          
+            Release notes
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//stackoverflow.com/questions/tagged/tensorflow"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 3)"
+            >
+            
+          
+            Stack Overflow
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/extras/tensorflow_brand_guidelines.pdf"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 4)"
+            >
+            
+          
+            Brand guidelines
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/about/bib"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 5)"
+            >
+            
+              
+              
+            
+          
+            Cite TensorFlow
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+  
+</nav>
+          
+        </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+          
+            
+
+<div class="devsite-footer-utility nocontent">
+  
+
+  
+  <nav class="devsite-footer-utility-links" aria-label="Utility links">
+    
+    <ul class="devsite-footer-utility-list">
+      
+      <li class="devsite-footer-utility-item
+                 ">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link"
+         >
+          Terms
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 ">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link"
+         >
+          Privacy
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 glue-cookie-notification-bar-control">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="#"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Manage cookies link"
+         
+           aria-hidden="true"
+         >
+          Manage cookies
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+        
+        <span class="devsite-footer-utility-description">Sign up for the TensorFlow newsletter</span>
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//www.tensorflow.org/subscribe"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link"
+         >
+          Subscribe
+        </a>
+        
+      </li>
+      
+    </ul>
+    
+    
+<devsite-language-selector>
+  <ul role="presentation">
+    
+    
+    <li role="presentation">
+      <a role="menuitem" lang="en"
+        >English</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es_419"
+        >Español – América Latina</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fr"
+        >Français</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="id"
+        >Indonesia</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="it"
+        >Italiano</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pl"
+        >Polski</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pt_br"
+        >Português – Brasil</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="vi"
+        >Tiếng Việt</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="tr"
+        >Türkçe</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ru"
+        >Русский</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="he"
+        >עברית</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ar"
+        >العربيّة</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fa"
+        >فارسی</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="hi"
+        >हिंदी</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="bn"
+        >বাংলা</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="th"
+        >ภาษาไทย</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_cn"
+        >中文 – 简体</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ja"
+        >日本語</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ko"
+        >한국어</a>
+    </li>
+    
+  </ul>
+</devsite-language-selector>
+
+  </nav>
+</div>
+          
+        </devsite-footer-utility>
+        <devsite-panel>
+          
+        </devsite-panel>
+        
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar></devsite-snackbar>
+    <devsite-tooltip ></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+      
+        <script type="application/json" analytics>[{&#34;dimensions&#34;: {&#34;dimension3&#34;: false, &#34;dimension6&#34;: &#34;en&#34;, &#34;dimension5&#34;: &#34;en&#34;, &#34;dimension4&#34;: &#34;TensorFlow Core&#34;, &#34;dimension1&#34;: &#34;Signed out&#34;, &#34;dimension12&#34;: false}, &#34;gaid&#34;: &#34;UA-69864048-1&#34;, &#34;metrics&#34;: {&#34;ratings_count&#34;: &#34;metric2&#34;, &#34;ratings_value&#34;: &#34;metric1&#34;}, &#34;purpose&#34;: 0}]</script>
+<script type="application/json" tag-management>{&#34;at&#34;: &#34;True&#34;, &#34;ga4&#34;: [], &#34;ga4p&#34;: [], &#34;gtm&#34;: [{&#34;id&#34;: &#34;GTM-MXSL34P&#34;, &#34;purpose&#34;: 0}], &#34;parameters&#34;: {&#34;internalUser&#34;: &#34;False&#34;, &#34;language&#34;: {&#34;machineTranslated&#34;: &#34;False&#34;, &#34;requested&#34;: &#34;en&#34;, &#34;served&#34;: &#34;en&#34;}, &#34;pageType&#34;: &#34;article&#34;, &#34;projectName&#34;: &#34;TensorFlow Core&#34;, &#34;signedIn&#34;: &#34;False&#34;, &#34;tenant&#34;: &#34;tensorflow&#34;, &#34;recommendations&#34;: {&#34;sourcePage&#34;: &#34;&#34;, &#34;sourceType&#34;: 0, &#34;sourceRank&#34;: 0, &#34;sourceIdenticalDescriptions&#34;: 0, &#34;sourceTitleWords&#34;: 0, &#34;sourceDescriptionWords&#34;: 0, &#34;experiment&#34;: &#34;&#34;}, &#34;experiment&#34;: {&#34;ids&#34;: &#34;&#34;}}}</script>
+      
+    </devsite-analytics>
+    
+      <devsite-badger></devsite-badger>
+    
+    
+    
+    
+<script nonce="f5vo/GCRBmzxtaDJsycN4VYSBwooE0">
+  
+  (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v893b810958a0a119aa54e87c6f4f7fb5af7eacc01ad7a1f488382f3791697b7d/tensorflow/js/app_loader.js', '[15,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/v893b810958a0a119aa54e87c6f4f7fb5af7eacc01ad7a1f488382f3791697b7d","https://www.gstatic.com/devrel-devsite/prod/v893b810958a0a119aa54e87c6f4f7fb5af7eacc01ad7a1f488382f3791697b7d/tensorflow","https://tensorflow-dot-devsite-v2-prod-3p.appspot.com",null,null,["/_pwa/tensorflow/manifest.json","https://www.gstatic.com/devrel-devsite/prod/v893b810958a0a119aa54e87c6f4f7fb5af7eacc01ad7a1f488382f3791697b7d/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v893b810958a0a119aa54e87c6f4f7fb5af7eacc01ad7a1f488382f3791697b7d/tensorflow/images/favicon.png","https://www.gstatic.com/devrel-devsite/prod/v893b810958a0a119aa54e87c6f4f7fb5af7eacc01ad7a1f488382f3791697b7d/tensorflow/images/lockup.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"AIzaSyCNm9YxQumEXwGJgTDjxoxXK6m1F-9720Q","AIzaSyCc76DZePGtoyUjqKrLdsMGk_ry7sljLbY","www.tensorflow.org","AIzaSyB9bqgQ2t11WJsOX8qNsCQ6U-w91mmqF-I","AIzaSyAdYnStPdzjcJJtQ0mvIaeaMKj7_t6J_Fg",null,null,null,["MiscFeatureFlags__enable_variable_operator_index_yaml","Analytics__enable_clearcut_logging","Profiles__enable_user_type","Profiles__enable_callout_notifications","Cloud__enable_legacy_calculator_redirect","Search__enable_ai_eligibility_checks","DevPro__enable_nvidia_credits_card","DevPro__enable_vertex_credit_card","DevPro__enable_code_assist","Profiles__enable_auto_apply_credits","Cloud__enable_cloud_shell","Profiles__enable_page_saving","Cloud__enable_llm_concierge_chat","MiscFeatureFlags__enable_project_variables","Cloud__enable_cloudx_experiment_ids","MiscFeatureFlags__enable_explain_this_code","Profiles__enable_playlist_community_acl","DevPro__enable_free_benefits","DevPro__enable_enterprise","MiscFeatureFlags__enable_appearance_cookies","MiscFeatureFlags__enable_firebase_utm","DevPro__remove_eu_tax_intake_form","Profiles__enable_stripe_subscription_management","CloudShell__cloud_code_overflow_menu","Profiles__enable_public_developer_profiles","Profiles__require_profile_eligibility_for_signin","Concierge__enable_pushui","Search__enable_page_map","Profiles__enable_profile_collections","Profiles__enable_completecodelab_endpoint","Profiles__enable_dashboard_curated_recommendations","MiscFeatureFlags__developers_footer_dark_image","Profiles__enable_developer_profile_benefits_ui_redesign","Concierge__enable_remove_info_panel_tags","EngEduTelemetry__enable_engedu_telemetry","MiscFeatureFlags__enable_project_body_class","DevPro__enable_google_payments_buyflow","DevPro__enable_google_one_card","DevPro__enable_firebase_workspaces_card","Profiles__enable_completequiz_endpoint","CloudShell__cloud_shell_button","TpcFeatures__enable_unmirrored_page_left_nav","Concierge__enable_actions_menu","DevPro__enable_developer_subscriptions","Profiles__enable_release_notes_notifications","Cloud__enable_cloud_shell_fte_user_flow","DevPro__enable_embed_profile_creation","Search__enable_dynamic_content_confidential_banner","MiscFeatureFlags__enable_framebox_badge_methods","MiscFeatureFlags__emergency_css","Search__enable_suggestions_from_borg","Search__enable_ai_search_summaries_for_all","Profiles__enable_developer_profiles_callout","DevPro__enable_payments_init","BookNav__enable_tenant_cache_key","Experiments__reqs_query_experiments","Profiles__enable_purchase_prompts","Profiles__enable_recognition_badges","MiscFeatureFlags__enable_view_transitions","SignIn__enable_refresh_access_tokens","MiscFeatureFlags__enable_explicit_template_dependencies","TpcFeatures__proxy_prod_host","MiscFeatureFlags__enable_variable_operator","Cloud__enable_free_trial_server_call","Profiles__enable_awarding_url","MiscFeatureFlags__gdp_dashboard_reskin_enabled","Profiles__enable_join_program_group_endpoint","DevPro__enable_cloud_innovators_plus","DevPro__enable_devpro_offers","Cloud__enable_cloud_dlp_service","Cloud__fast_free_trial","Profiles__enable_developer_profile_pages_as_content","MiscFeatureFlags__developers_footer_image","Cloud__cache_serialized_dynamic_content","Profiles__enable_complete_playlist_endpoint"],null,null,"AIzaSyA58TaKli1DculwmAmbpzLVGuWc8eCQgQc","https://developerscontentserving-pa.googleapis.com","AIzaSyDWBU60w0P9hEkr29kkksYs8Z7gvZ8u_wc","https://developerscontentsearch-pa.googleapis.com",2,4,null,"https://developerprofiles-pa.googleapis.com",[15,"tensorflow","TensorFlow","www.tensorflow.org",null,"tensorflow-dot-devsite-v2-prod-3p.appspot.com",null,null,[null,1,null,null,null,null,null,null,null,null,null,[1],null,null,null,null,null,null,[1],[1,null,null,[1]],null,null,null,[1,null,1],[1,1,null,1,1],null,null,null,null,null,[1]],null,[25,null,null,null,null,null,"/images/lockup.svg","/images/logo.png",null,null,null,1,1,null,null,null,null,null,null,null,null,1,null,null,null,null,[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1],null,[[],[1,1]],[[["UA-69864048-1"],["UA-69864048-4"],null,null,["UA-69864048-5"],["GTM-MXSL34P"],null,null,[["UA-69864048-1",1]],null,[["UA-69864048-5",1]],[["GTM-MXSL34P",1]],1],[[12,8],[1,1],[4,3],[5,4],[6,5],[3,2]],[[2,2],[1,1]]],null,4],null,null,1,1,"https://developerscontentinsights-pa.googleapis.com","AIzaSyC11xEGtFhkmSh_iF6l_itbxnFz2GrIBOg","AIzaSyAXJ10nRF73mmdSDINgkCNX5bbd2KPcWm8","https://developers.googleapis.com",null,null,"AIzaSyCjP0KOnHfv8mwe38sfzZJMOnqE3HvrD4A",null,"https://developerslogging.googleapis.com"]')
+  
+</script>
+
+    <devsite-a11y-announce></devsite-a11y-announce>
+  </body>
+</html>
