@@ -2,11 +2,13 @@
 """
 Script to verify HTML-Markdown pairs and create a dataset mapping file.
 Checks if each HTML file has a corresponding cleaned markdown file.
+Splits dataset into training and testing sets.
 """
 
 import os
 from pathlib import Path
 import json
+import random
 
 def main():
     # Setup directories
@@ -58,20 +60,63 @@ def main():
         for fname in missing_markdown:
             print(f"  • {fname}")
     
-    # Create dataset mapping file
+    # Split into training and testing sets
+    print("\n" + "=" * 70)
+    print("Splitting dataset into training and testing sets...")
+    
+    # Shuffle pairs for random split
+    random.seed(42)  # For reproducibility
+    shuffled_pairs = valid_pairs.copy()
+    random.shuffle(shuffled_pairs)
+    
+    # Split: 10 for testing, rest for training
+    test_size = 10
+    test_pairs = shuffled_pairs[:test_size]
+    train_pairs = shuffled_pairs[test_size:]
+    
+    print(f"Training set: {len(train_pairs)} pairs")
+    print(f"Testing set: {len(test_pairs)} pairs")
+    
+    # Create complete dataset info
     dataset_info = {
         'total_pairs': len(valid_pairs),
+        'train_size': len(train_pairs),
+        'test_size': len(test_pairs),
         'dataset_pairs': valid_pairs,
         'missing_markdown': missing_markdown
     }
     
+    # Create training dataset
+    train_dataset = {
+        'total_pairs': len(train_pairs),
+        'dataset_pairs': train_pairs
+    }
+    
+    # Create testing dataset
+    test_dataset = {
+        'total_pairs': len(test_pairs),
+        'dataset_pairs': test_pairs
+    }
+    
+    # Save all three JSON files
     output_file = os.path.join(script_dir, 'dataset_pairs.json')
+    train_file = os.path.join(script_dir, 'train_dataset.json')
+    test_file = os.path.join(script_dir, 'test_dataset.json')
+    
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(dataset_info, f, indent=2)
     
+    with open(train_file, 'w', encoding='utf-8') as f:
+        json.dump(train_dataset, f, indent=2)
+    
+    with open(test_file, 'w', encoding='utf-8') as f:
+        json.dump(test_dataset, f, indent=2)
+    
     print("\n" + "=" * 70)
-    print(f"✓ Dataset mapping saved to: dataset_pairs.json")
-    print(f"You have {len(valid_pairs)} HTML → Markdown pairs ready for training!")
+    print(f"✓ Complete dataset mapping saved to: dataset_pairs.json")
+    print(f"✓ Training dataset saved to: train_dataset.json ({len(train_pairs)} pairs)")
+    print(f"✓ Testing dataset saved to: test_dataset.json ({len(test_pairs)} pairs)")
+    print(f"\nYou have {len(valid_pairs)} HTML → Markdown pairs ready for training!")
     print("=" * 70)
 
 if __name__ == "__main__":

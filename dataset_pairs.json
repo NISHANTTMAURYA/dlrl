@@ -1,5 +1,7 @@
 {
   "total_pairs": 94,
+  "train_size": 84,
+  "test_size": 10,
   "dataset_pairs": [
     {
       "html_file": "dataset/raw_html/9to5mac_com.html",

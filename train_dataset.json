@@ -1,0 +1,593 @@
+{
+  "total_pairs": 84,
+  "dataset_pairs": [
+    {
+      "html_file": "dataset/raw_html/data_gov.html",
+      "markdown_file": "dataset/cleaned_markdown/data_gov.md",
+      "html_size": 120003,
+      "markdown_size": 4744,
+      "base_name": "data_gov"
+    },
+    {
+      "html_file": "dataset/raw_html/bonappetit_com_recipes.html",
+      "markdown_file": "dataset/cleaned_markdown/bonappetit_com_recipes.md",
+      "html_size": 2192298,
+      "markdown_size": 42292,
+      "base_name": "bonappetit_com_recipes"
+    },
+    {
+      "html_file": "dataset/raw_html/law_cornell_edu_constitution.html",
+      "markdown_file": "dataset/cleaned_markdown/law_cornell_edu_constitution.md",
+      "html_size": 44601,
+      "markdown_size": 13006,
+      "base_name": "law_cornell_edu_constitution"
+    },
+    {
+      "html_file": "dataset/raw_html/scholar_google_com.html",
+      "markdown_file": "dataset/cleaned_markdown/scholar_google_com.md",
+      "html_size": 129668,
+      "markdown_size": 5605,
+      "base_name": "scholar_google_com"
+    },
+    {
+      "html_file": "dataset/raw_html/kubernetes_io_docs_tutorials_kubernetes-basics.html",
+      "markdown_file": "dataset/cleaned_markdown/kubernetes_io_docs_tutorials_kubernetes-basics.md",
+      "html_size": 473170,
+      "markdown_size": 84250,
+      "base_name": "kubernetes_io_docs_tutorials_kubernetes-basics"
+    },
+    {
+      "html_file": "dataset/raw_html/vuejs_org_guide_introduction_html.html",
+      "markdown_file": "dataset/cleaned_markdown/vuejs_org_guide_introduction_html.md",
+      "html_size": 111548,
+      "markdown_size": 18174,
+      "base_name": "vuejs_org_guide_introduction_html"
+    },
+    {
+      "html_file": "dataset/raw_html/javascript_info_intro.html",
+      "markdown_file": "dataset/cleaned_markdown/javascript_info_intro.md",
+      "html_size": 34526,
+      "markdown_size": 11892,
+      "base_name": "javascript_info_intro"
+    },
+    {
+      "html_file": "dataset/raw_html/github_com_about.html",
+      "markdown_file": "dataset/cleaned_markdown/github_com_about.md",
+      "html_size": 270375,
+      "markdown_size": 10324,
+      "base_name": "github_com_about"
+    },
+    {
+      "html_file": "dataset/raw_html/si_com.html",
+      "markdown_file": "dataset/cleaned_markdown/si_com.md",
+      "html_size": 1598716,
+      "markdown_size": 60691,
+      "base_name": "si_com"
+    },
+    {
+      "html_file": "dataset/raw_html/en_wikipedia_org_wiki_Cloud_computing.html",
+      "markdown_file": "dataset/cleaned_markdown/en_wikipedia_org_wiki_Cloud_computing.md",
+      "html_size": 344680,
+      "markdown_size": 129695,
+      "base_name": "en_wikipedia_org_wiki_Cloud_computing"
+    },
+    {
+      "html_file": "dataset/raw_html/mayoclinic_org_diseases-conditions_diabete_0e00dec2.html",
+      "markdown_file": "dataset/cleaned_markdown/mayoclinic_org_diseases-conditions_diabete_0e00dec2.md",
+      "html_size": 583186,
+      "markdown_size": 33978,
+      "base_name": "mayoclinic_org_diseases-conditions_diabete_0e00dec2"
+    },
+    {
+      "html_file": "dataset/raw_html/sciencedaily_com.html",
+      "markdown_file": "dataset/cleaned_markdown/sciencedaily_com.md",
+      "html_size": 153720,
+      "markdown_size": 80071,
+      "base_name": "sciencedaily_com"
+    },
+    {
+      "html_file": "dataset/raw_html/healthline_com_nutrition_intermittent-fast_192a86b0.html",
+      "markdown_file": "dataset/cleaned_markdown/healthline_com_nutrition_intermittent-fast_192a86b0.md",
+      "html_size": 599950,
+      "markdown_size": 36194,
+      "base_name": "healthline_com_nutrition_intermittent-fast_192a86b0"
+    },
+    {
+      "html_file": "dataset/raw_html/en_wikipedia_org_wiki_Deep_learning.html",
+      "markdown_file": "dataset/cleaned_markdown/en_wikipedia_org_wiki_Deep_learning.md",
+      "html_size": 824649,
+      "markdown_size": 304960,
+      "base_name": "en_wikipedia_org_wiki_Deep_learning"
+    },
+    {
+      "html_file": "dataset/raw_html/supremecourt_gov.html",
+      "markdown_file": "dataset/cleaned_markdown/supremecourt_gov.md",
+      "html_size": 132919,
+      "markdown_size": 12609,
+      "base_name": "supremecourt_gov"
+    },
+    {
+      "html_file": "dataset/raw_html/pubmed_ncbi_nlm_nih_gov.html",
+      "markdown_file": "dataset/cleaned_markdown/pubmed_ncbi_nlm_nih_gov.md",
+      "html_size": 42321,
+      "markdown_size": 6623,
+      "base_name": "pubmed_ncbi_nlm_nih_gov"
+    },
+    {
+      "html_file": "dataset/raw_html/web_dev_learn.html",
+      "markdown_file": "dataset/cleaned_markdown/web_dev_learn.md",
+      "html_size": 117968,
+      "markdown_size": 9515,
+      "base_name": "web_dev_learn"
+    },
+    {
+      "html_file": "dataset/raw_html/blog_golang_org.html",
+      "markdown_file": "dataset/cleaned_markdown/blog_golang_org.md",
+      "html_size": 29834,
+      "markdown_size": 6871,
+      "base_name": "blog_golang_org"
+    },
+    {
+      "html_file": "dataset/raw_html/espn_com_nba.html",
+      "markdown_file": "dataset/cleaned_markdown/espn_com_nba.md",
+      "html_size": 171191,
+      "markdown_size": 18499,
+      "base_name": "espn_com_nba"
+    },
+    {
+      "html_file": "dataset/raw_html/theguardian_com_technology.html",
+      "markdown_file": "dataset/cleaned_markdown/theguardian_com_technology.md",
+      "html_size": 564996,
+      "markdown_size": 21151,
+      "base_name": "theguardian_com_technology"
+    },
+    {
+      "html_file": "dataset/raw_html/stackoverflow_com_questions_tagged_python.html",
+      "markdown_file": "dataset/cleaned_markdown/stackoverflow_com_questions_tagged_python.md",
+      "html_size": 226747,
+      "markdown_size": 26781,
+      "base_name": "stackoverflow_com_questions_tagged_python"
+    },
+    {
+      "html_file": "dataset/raw_html/imdb_com_chart_top.html",
+      "markdown_file": "dataset/cleaned_markdown/imdb_com_chart_top.md",
+      "html_size": 1735135,
+      "markdown_size": 13648,
+      "base_name": "imdb_com_chart_top"
+    },
+    {
+      "html_file": "dataset/raw_html/hackerrank_com_domains_python.html",
+      "markdown_file": "dataset/cleaned_markdown/hackerrank_com_domains_python.md",
+      "html_size": 934125,
+      "markdown_size": 2594,
+      "base_name": "hackerrank_com_domains_python"
+    },
+    {
+      "html_file": "dataset/raw_html/github_com_features.html",
+      "markdown_file": "dataset/cleaned_markdown/github_com_features.md",
+      "html_size": 613614,
+      "markdown_size": 29402,
+      "base_name": "github_com_features"
+    },
+    {
+      "html_file": "dataset/raw_html/wirecutter_com.html",
+      "markdown_file": "dataset/cleaned_markdown/wirecutter_com.md",
+      "html_size": 585798,
+      "markdown_size": 48719,
+      "base_name": "wirecutter_com"
+    },
+    {
+      "html_file": "dataset/raw_html/journals_plos_org_plosone.html",
+      "markdown_file": "dataset/cleaned_markdown/journals_plos_org_plosone.md",
+      "html_size": 72527,
+      "markdown_size": 15137,
+      "base_name": "journals_plos_org_plosone"
+    },
+    {
+      "html_file": "dataset/raw_html/wired_com_tag_artificial-intelligence.html",
+      "markdown_file": "dataset/cleaned_markdown/wired_com_tag_artificial-intelligence.md",
+      "html_size": 982400,
+      "markdown_size": 11791,
+      "base_name": "wired_com_tag_artificial-intelligence"
+    },
+    {
+      "html_file": "dataset/raw_html/cnet_com_reviews.html",
+      "markdown_file": "dataset/cleaned_markdown/cnet_com_reviews.md",
+      "html_size": 1204731,
+      "markdown_size": 58482,
+      "base_name": "cnet_com_reviews"
+    },
+    {
+      "html_file": "dataset/raw_html/engineering_fb_com.html",
+      "markdown_file": "dataset/cleaned_markdown/engineering_fb_com.md",
+      "html_size": 75792,
+      "markdown_size": 11751,
+      "base_name": "engineering_fb_com"
+    },
+    {
+      "html_file": "dataset/raw_html/docs_docker_com_get-started.html",
+      "markdown_file": "dataset/cleaned_markdown/docs_docker_com_get-started.md",
+      "html_size": 84289,
+      "markdown_size": 6502,
+      "base_name": "docs_docker_com_get-started"
+    },
+    {
+      "html_file": "dataset/raw_html/freecodecamp_org_news.html",
+      "markdown_file": "dataset/cleaned_markdown/freecodecamp_org_news.md",
+      "html_size": 100494,
+      "markdown_size": 21392,
+      "base_name": "freecodecamp_org_news"
+    },
+    {
+      "html_file": "dataset/raw_html/git-scm_com_book_en_v2_Getting-Started-Abo_e76f7ee4.html",
+      "markdown_file": "dataset/cleaned_markdown/git-scm_com_book_en_v2_Getting-Started-Abo_e76f7ee4.md",
+      "html_size": 126572,
+      "markdown_size": 19001,
+      "base_name": "git-scm_com_book_en_v2_Getting-Started-Abo_e76f7ee4"
+    },
+    {
+      "html_file": "dataset/raw_html/css-tricks_com_snippets_css_a-guide-to-flexbox.html",
+      "markdown_file": "dataset/cleaned_markdown/css-tricks_com_snippets_css_a-guide-to-flexbox.md",
+      "html_size": 734626,
+      "markdown_size": 235358,
+      "base_name": "css-tricks_com_snippets_css_a-guide-to-flexbox"
+    },
+    {
+      "html_file": "dataset/raw_html/nodejs_org_en_docs_guides_getting-started-guide.html",
+      "markdown_file": "dataset/cleaned_markdown/nodejs_org_en_docs_guides_getting-started-guide.md",
+      "html_size": 349065,
+      "markdown_size": 15296,
+      "base_name": "nodejs_org_en_docs_guides_getting-started-guide"
+    },
+    {
+      "html_file": "dataset/raw_html/runnersworld_com.html",
+      "markdown_file": "dataset/cleaned_markdown/runnersworld_com.md",
+      "html_size": 667940,
+      "markdown_size": 30820,
+      "base_name": "runnersworld_com"
+    },
+    {
+      "html_file": "dataset/raw_html/medium_com.html",
+      "markdown_file": "dataset/cleaned_markdown/medium_com.md",
+      "html_size": 38232,
+      "markdown_size": 1135,
+      "base_name": "medium_com"
+    },
+    {
+      "html_file": "dataset/raw_html/bbc_com_news_technology.html",
+      "markdown_file": "dataset/cleaned_markdown/bbc_com_news_technology.md",
+      "html_size": 438990,
+      "markdown_size": 37179,
+      "base_name": "bbc_com_news_technology"
+    },
+    {
+      "html_file": "dataset/raw_html/en_wikipedia_org_wiki_Natural_language_processing.html",
+      "markdown_file": "dataset/cleaned_markdown/en_wikipedia_org_wiki_Natural_language_processing.md",
+      "html_size": 309817,
+      "markdown_size": 116823,
+      "base_name": "en_wikipedia_org_wiki_Natural_language_processing"
+    },
+    {
+      "html_file": "dataset/raw_html/smashingmagazine_com.html",
+      "markdown_file": "dataset/cleaned_markdown/smashingmagazine_com.md",
+      "html_size": 281833,
+      "markdown_size": 18932,
+      "base_name": "smashingmagazine_com"
+    },
+    {
+      "html_file": "dataset/raw_html/ign_com_reviews.html",
+      "markdown_file": "dataset/cleaned_markdown/ign_com_reviews.md",
+      "html_size": 242002,
+      "markdown_size": 10048,
+      "base_name": "ign_com_reviews"
+    },
+    {
+      "html_file": "dataset/raw_html/allrecipes_com_recipe_23600_worlds-best-lasagna.html",
+      "markdown_file": "dataset/cleaned_markdown/allrecipes_com_recipe_23600_worlds-best-lasagna.md",
+      "html_size": 624010,
+      "markdown_size": 40368,
+      "base_name": "allrecipes_com_recipe_23600_worlds-best-lasagna"
+    },
+    {
+      "html_file": "dataset/raw_html/copyright_gov.html",
+      "markdown_file": "dataset/cleaned_markdown/copyright_gov.md",
+      "html_size": 56454,
+      "markdown_size": 11019,
+      "base_name": "copyright_gov"
+    },
+    {
+      "html_file": "dataset/raw_html/flask_palletsprojects_com_en_latest_quickstart.html",
+      "markdown_file": "dataset/cleaned_markdown/flask_palletsprojects_com_en_latest_quickstart.md",
+      "html_size": 86566,
+      "markdown_size": 34654,
+      "base_name": "flask_palletsprojects_com_en_latest_quickstart"
+    },
+    {
+      "html_file": "dataset/raw_html/postgresql_org_docs_current_tutorial-start_html.html",
+      "markdown_file": "dataset/cleaned_markdown/postgresql_org_docs_current_tutorial-start_html.md",
+      "html_size": 14542,
+      "markdown_size": 4197,
+      "base_name": "postgresql_org_docs_current_tutorial-start_html"
+    },
+    {
+      "html_file": "dataset/raw_html/docs_djangoproject_com_en_stable_intro_tutorial01.html",
+      "markdown_file": "dataset/cleaned_markdown/docs_djangoproject_com_en_stable_intro_tutorial01.md",
+      "html_size": 54283,
+      "markdown_size": 20361,
+      "base_name": "docs_djangoproject_com_en_stable_intro_tutorial01"
+    },
+    {
+      "html_file": "dataset/raw_html/microsoft_com_en-us_ai.html",
+      "markdown_file": "dataset/cleaned_markdown/microsoft_com_en-us_ai.md",
+      "html_size": 366855,
+      "markdown_size": 50711,
+      "base_name": "microsoft_com_en-us_ai"
+    },
+    {
+      "html_file": "dataset/raw_html/docs_python_org_3_tutorial_index_html.html",
+      "markdown_file": "dataset/cleaned_markdown/docs_python_org_3_tutorial_index_html.md",
+      "html_size": 35633,
+      "markdown_size": 14616,
+      "base_name": "docs_python_org_3_tutorial_index_html"
+    },
+    {
+      "html_file": "dataset/raw_html/arxiv_org_abs_1706_03762.html",
+      "markdown_file": "dataset/cleaned_markdown/arxiv_org_abs_1706_03762.md",
+      "html_size": 48256,
+      "markdown_size": 9935,
+      "base_name": "arxiv_org_abs_1706_03762"
+    },
+    {
+      "html_file": "dataset/raw_html/arxiv_org_abs_1810_04805.html",
+      "markdown_file": "dataset/cleaned_markdown/arxiv_org_abs_1810_04805.md",
+      "html_size": 46469,
+      "markdown_size": 9077,
+      "base_name": "arxiv_org_abs_1810_04805"
+    },
+    {
+      "html_file": "dataset/raw_html/developer_mozilla_org_en-US_docs_Web_HTML.html",
+      "markdown_file": "dataset/cleaned_markdown/developer_mozilla_org_en-US_docs_Web_HTML.md",
+      "html_size": 171749,
+      "markdown_size": 36770,
+      "base_name": "developer_mozilla_org_en-US_docs_Web_HTML"
+    },
+    {
+      "html_file": "dataset/raw_html/investopedia_com_terms_b_blockchain_asp.html",
+      "markdown_file": "dataset/cleaned_markdown/investopedia_com_terms_b_blockchain_asp.md",
+      "html_size": 659654,
+      "markdown_size": 59184,
+      "base_name": "investopedia_com_terms_b_blockchain_asp"
+    },
+    {
+      "html_file": "dataset/raw_html/usa_gov_how-to-vote.html",
+      "markdown_file": "dataset/cleaned_markdown/usa_gov_how-to-vote.md",
+      "html_size": 38280,
+      "markdown_size": 5390,
+      "base_name": "usa_gov_how-to-vote"
+    },
+    {
+      "html_file": "dataset/raw_html/bodybuilding_com_fun_beginner_htm.html",
+      "markdown_file": "dataset/cleaned_markdown/bodybuilding_com_fun_beginner_htm.md",
+      "html_size": 352159,
+      "markdown_size": 20526,
+      "base_name": "bodybuilding_com_fun_beginner_htm"
+    },
+    {
+      "html_file": "dataset/raw_html/reactjs_org_docs_getting-started_html.html",
+      "markdown_file": "dataset/cleaned_markdown/reactjs_org_docs_getting-started_html.md",
+      "html_size": 266495,
+      "markdown_size": 27126,
+      "base_name": "reactjs_org_docs_getting-started_html"
+    },
+    {
+      "html_file": "dataset/raw_html/google_com_about.html",
+      "markdown_file": "dataset/cleaned_markdown/google_com_about.md",
+      "html_size": 105210,
+      "markdown_size": 8161,
+      "base_name": "google_com_about"
+    },
+    {
+      "html_file": "dataset/raw_html/tensorflow_org_tutorials_quickstart_beginner.html",
+      "markdown_file": "dataset/cleaned_markdown/tensorflow_org_tutorials_quickstart_beginner.md",
+      "html_size": 186630,
+      "markdown_size": 35789,
+      "base_name": "tensorflow_org_tutorials_quickstart_beginner"
+    },
+    {
+      "html_file": "dataset/raw_html/dev_to.html",
+      "markdown_file": "dataset/cleaned_markdown/dev_to.md",
+      "html_size": 288087,
+      "markdown_size": 49229,
+      "base_name": "dev_to"
+    },
+    {
+      "html_file": "dataset/raw_html/9to5mac_com.html",
+      "markdown_file": "dataset/cleaned_markdown/9to5mac_com.md",
+      "html_size": 305453,
+      "markdown_size": 65393,
+      "base_name": "9to5mac_com"
+    },
+    {
+      "html_file": "dataset/raw_html/webmd_com_diet_health-benefits-green-tea.html",
+      "markdown_file": "dataset/cleaned_markdown/webmd_com_diet_health-benefits-green-tea.md",
+      "html_size": 407892,
+      "markdown_size": 25168,
+      "base_name": "webmd_com_diet_health-benefits-green-tea"
+    },
+    {
+      "html_file": "dataset/raw_html/metacritic_com_game.html",
+      "markdown_file": "dataset/cleaned_markdown/metacritic_com_game.md",
+      "html_size": 619851,
+      "markdown_size": 16735,
+      "base_name": "metacritic_com_game"
+    },
+    {
+      "html_file": "dataset/raw_html/w3schools_com_python.html",
+      "markdown_file": "dataset/cleaned_markdown/w3schools_com_python.md",
+      "html_size": 400839,
+      "markdown_size": 67360,
+      "base_name": "w3schools_com_python"
+    },
+    {
+      "html_file": "dataset/raw_html/lonelyplanet_com_japan.html",
+      "markdown_file": "dataset/cleaned_markdown/lonelyplanet_com_japan.md",
+      "html_size": 935630,
+      "markdown_size": 41320,
+      "base_name": "lonelyplanet_com_japan"
+    },
+    {
+      "html_file": "dataset/raw_html/tomsguide_com.html",
+      "markdown_file": "dataset/cleaned_markdown/tomsguide_com.md",
+      "html_size": 1842329,
+      "markdown_size": 108379,
+      "base_name": "tomsguide_com"
+    },
+    {
+      "html_file": "dataset/raw_html/e360_yale_edu.html",
+      "markdown_file": "dataset/cleaned_markdown/e360_yale_edu.md",
+      "html_size": 46204,
+      "markdown_size": 14428,
+      "base_name": "e360_yale_edu"
+    },
+    {
+      "html_file": "dataset/raw_html/rottentomatoes_com.html",
+      "markdown_file": "dataset/cleaned_markdown/rottentomatoes_com.md",
+      "html_size": 605163,
+      "markdown_size": 31472,
+      "base_name": "rottentomatoes_com"
+    },
+    {
+      "html_file": "dataset/raw_html/techcrunch_com.html",
+      "markdown_file": "dataset/cleaned_markdown/techcrunch_com.md",
+      "html_size": 405965,
+      "markdown_size": 39391,
+      "base_name": "techcrunch_com"
+    },
+    {
+      "html_file": "dataset/raw_html/ocw_mit_edu_courses_6-0001-introduction-to_e376e0d8.html",
+      "markdown_file": "dataset/cleaned_markdown/ocw_mit_edu_courses_6-0001-introduction-to_e376e0d8.md",
+      "html_size": 60187,
+      "markdown_size": 11180,
+      "base_name": "ocw_mit_edu_courses_6-0001-introduction-to_e376e0d8"
+    },
+    {
+      "html_file": "dataset/raw_html/en_wikipedia_org_wiki_Blockchain.html",
+      "markdown_file": "dataset/cleaned_markdown/en_wikipedia_org_wiki_Blockchain.md",
+      "html_size": 585716,
+      "markdown_size": 216420,
+      "base_name": "en_wikipedia_org_wiki_Blockchain"
+    },
+    {
+      "html_file": "dataset/raw_html/eff_org.html",
+      "markdown_file": "dataset/cleaned_markdown/eff_org.md",
+      "html_size": 57595,
+      "markdown_size": 21718,
+      "base_name": "eff_org"
+    },
+    {
+      "html_file": "dataset/raw_html/theverge_com_tech.html",
+      "markdown_file": "dataset/cleaned_markdown/theverge_com_tech.md",
+      "html_size": 653597,
+      "markdown_size": 36416,
+      "base_name": "theverge_com_tech"
+    },
+    {
+      "html_file": "dataset/raw_html/whitehouse_gov.html",
+      "markdown_file": "dataset/cleaned_markdown/whitehouse_gov.md",
+      "html_size": 171047,
+      "markdown_size": 7162,
+      "base_name": "whitehouse_gov"
+    },
+    {
+      "html_file": "dataset/raw_html/arstechnica_com_gadgets.html",
+      "markdown_file": "dataset/cleaned_markdown/arstechnica_com_gadgets.md",
+      "html_size": 268340,
+      "markdown_size": 28254,
+      "base_name": "arstechnica_com_gadgets"
+    },
+    {
+      "html_file": "dataset/raw_html/martinfowler_com_articles_microservices_html.html",
+      "markdown_file": "dataset/cleaned_markdown/martinfowler_com_articles_microservices_html.md",
+      "html_size": 86354,
+      "markdown_size": 61046,
+      "base_name": "martinfowler_com_articles_microservices_html"
+    },
+    {
+      "html_file": "dataset/raw_html/seriouseats_com_the-food-lab.html",
+      "markdown_file": "dataset/cleaned_markdown/seriouseats_com_the-food-lab.md",
+      "html_size": 213669,
+      "markdown_size": 34641,
+      "base_name": "seriouseats_com_the-food-lab"
+    },
+    {
+      "html_file": "dataset/raw_html/climate_nasa_gov.html",
+      "markdown_file": "dataset/cleaned_markdown/climate_nasa_gov.md",
+      "html_size": 287143,
+      "markdown_size": 37889,
+      "base_name": "climate_nasa_gov"
+    },
+    {
+      "html_file": "dataset/raw_html/realpython_com_python-virtual-environments_9953abad.html",
+      "markdown_file": "dataset/cleaned_markdown/realpython_com_python-virtual-environments_9953abad.md",
+      "html_size": 491164,
+      "markdown_size": 162658,
+      "base_name": "realpython_com_python-virtual-environments_9953abad"
+    },
+    {
+      "html_file": "dataset/raw_html/cntraveler_com.html",
+      "markdown_file": "dataset/cleaned_markdown/cntraveler_com.md",
+      "html_size": 1800619,
+      "markdown_size": 32310,
+      "base_name": "cntraveler_com"
+    },
+    {
+      "html_file": "dataset/raw_html/creativebloq_com.html",
+      "markdown_file": "dataset/cleaned_markdown/creativebloq_com.md",
+      "html_size": 1170307,
+      "markdown_size": 19235,
+      "base_name": "creativebloq_com"
+    },
+    {
+      "html_file": "dataset/raw_html/en_wikipedia_org_wiki_Artificial_intelligence.html",
+      "markdown_file": "dataset/cleaned_markdown/en_wikipedia_org_wiki_Artificial_intelligence.md",
+      "html_size": 1295681,
+      "markdown_size": 538990,
+      "base_name": "en_wikipedia_org_wiki_Artificial_intelligence"
+    },
+    {
+      "html_file": "dataset/raw_html/en_wikipedia_org_wiki_Computer_vision.html",
+      "markdown_file": "dataset/cleaned_markdown/en_wikipedia_org_wiki_Computer_vision.md",
+      "html_size": 330328,
+      "markdown_size": 125301,
+      "base_name": "en_wikipedia_org_wiki_Computer_vision"
+    },
+    {
+      "html_file": "dataset/raw_html/en_wikipedia_org_wiki_Neural_network.html",
+      "markdown_file": "dataset/cleaned_markdown/en_wikipedia_org_wiki_Neural_network.md",
+      "html_size": 89321,
+      "markdown_size": 22282,
+      "base_name": "en_wikipedia_org_wiki_Neural_network"
+    },
+    {
+      "html_file": "dataset/raw_html/androidauthority_com.html",
+      "markdown_file": "dataset/cleaned_markdown/androidauthority_com.md",
+      "html_size": 345260,
+      "markdown_size": 8496,
+      "base_name": "androidauthority_com"
+    },
+    {
+      "html_file": "dataset/raw_html/codecademy_com_learn_learn-python-3.html",
+      "markdown_file": "dataset/cleaned_markdown/codecademy_com_learn_learn-python-3.md",
+      "html_size": 503734,
+      "markdown_size": 17849,
+      "base_name": "codecademy_com_learn_learn-python-3"
+    },
+    {
+      "html_file": "dataset/raw_html/techradar_com.html",
+      "markdown_file": "dataset/cleaned_markdown/techradar_com.md",
+      "html_size": 2008454,
+      "markdown_size": 111740,
+      "base_name": "techradar_com"
+    }
+  ]
+}

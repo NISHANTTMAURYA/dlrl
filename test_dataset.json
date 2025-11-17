@@ -1,0 +1,75 @@
+{
+  "total_pairs": 10,
+  "dataset_pairs": [
+    {
+      "html_file": "dataset/raw_html/reddit_com_r_learnprogramming.html",
+      "markdown_file": "dataset/cleaned_markdown/reddit_com_r_learnprogramming.md",
+      "html_size": 506922,
+      "markdown_size": 13699,
+      "base_name": "reddit_com_r_learnprogramming"
+    },
+    {
+      "html_file": "dataset/raw_html/nationalgeographic_com_environment.html",
+      "markdown_file": "dataset/cleaned_markdown/nationalgeographic_com_environment.md",
+      "html_size": 251093,
+      "markdown_size": 8190,
+      "base_name": "nationalgeographic_com_environment"
+    },
+    {
+      "html_file": "dataset/raw_html/nature_com_articles_d41586-023-00288-7.html",
+      "markdown_file": "dataset/cleaned_markdown/nature_com_articles_d41586-023-00288-7.md",
+      "html_size": 292273,
+      "markdown_size": 25239,
+      "base_name": "nature_com_articles_d41586-023-00288-7"
+    },
+    {
+      "html_file": "dataset/raw_html/nih_gov_health-information.html",
+      "markdown_file": "dataset/cleaned_markdown/nih_gov_health-information.md",
+      "html_size": 65819,
+      "markdown_size": 13257,
+      "base_name": "nih_gov_health-information"
+    },
+    {
+      "html_file": "dataset/raw_html/en_wikipedia_org_wiki_Machine_learning.html",
+      "markdown_file": "dataset/cleaned_markdown/en_wikipedia_org_wiki_Machine_learning.md",
+      "html_size": 690412,
+      "markdown_size": 282836,
+      "base_name": "en_wikipedia_org_wiki_Machine_learning"
+    },
+    {
+      "html_file": "dataset/raw_html/edx_org_learn_computer-science.html",
+      "markdown_file": "dataset/cleaned_markdown/edx_org_learn_computer-science.md",
+      "html_size": 1482799,
+      "markdown_size": 21179,
+      "base_name": "edx_org_learn_computer-science"
+    },
+    {
+      "html_file": "dataset/raw_html/aclu_org.html",
+      "markdown_file": "dataset/cleaned_markdown/aclu_org.md",
+      "html_size": 75756,
+      "markdown_size": 11778,
+      "base_name": "aclu_org"
+    },
+    {
+      "html_file": "dataset/raw_html/pytorch_org_tutorials_beginner_basics_intro_html.html",
+      "markdown_file": "dataset/cleaned_markdown/pytorch_org_tutorials_beginner_basics_intro_html.md",
+      "html_size": 61792,
+      "markdown_size": 13358,
+      "base_name": "pytorch_org_tutorials_beginner_basics_intro_html"
+    },
+    {
+      "html_file": "dataset/raw_html/cooking_nytimes_com_recipes_1015819-chocol_a8fba68e.html",
+      "markdown_file": "dataset/cleaned_markdown/cooking_nytimes_com_recipes_1015819-chocol_a8fba68e.md",
+      "html_size": 659247,
+      "markdown_size": 43989,
+      "base_name": "cooking_nytimes_com_recipes_1015819-chocol_a8fba68e"
+    },
+    {
+      "html_file": "dataset/raw_html/nationalgeographic_com_travel.html",
+      "markdown_file": "dataset/cleaned_markdown/nationalgeographic_com_travel.md",
+      "html_size": 269798,
+      "markdown_size": 8741,
+      "base_name": "nationalgeographic_com_travel"
+    }
+  ]
+}
